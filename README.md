@@ -1,1 +1,1 @@
-[I'm an inline-style link](https://www.google.com)
+[link to my own repo](https://github.com/bizkanta/velox-syllabus)
