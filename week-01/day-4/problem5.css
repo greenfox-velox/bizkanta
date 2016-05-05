@@ -1,0 +1,23 @@
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: #FFA619;
+}
+
+.main-foods {
+  list-style-type: square;
+}
+
+.main-foods .food {
+  color: blue;
+}
+
+.fruits {
+  list-style-type: disc;
+}
+
+.first-fruit {
+  color: red;
+}
