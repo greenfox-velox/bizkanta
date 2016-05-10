@@ -1,0 +1,175 @@
+body {
+  /*box-sizing: border-box;*/
+}
+
+.container {
+  width: 820px;
+  height: 1050px;
+  background: #DCD6CD;
+  margin: 0 auto;
+  font-family: Helvetica, arial;
+  color: #4A4261;
+}
+
+form {
+  margin: 0 auto;
+  padding: 50px 70px 50px 90px;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+h2 {
+  background: #938C97;
+  color: white;
+  height: 35px;
+  width: 300px;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-left: 10px;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.data {
+  width: 300px;
+  height: 35px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.birth-gender {
+  width: 300px;
+  display: flex;
+}
+
+.birth {
+  width: 150px;
+}
+
+
+.birth #number {
+  width: 70px;
+  height: 35px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+
+.genders {
+  width: 150px;
+}
+
+.genders p {
+  margin-top: 0;
+}
+
+.genderlist {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.genderlist li {
+  width: 70px;
+}
+
+.genderlist label {
+  font-weight: normal;
+}
+
+.brandslist {
+  list-style: none;
+  padding-left: 0;
+  columns: 2;
+}
+
+.brandslist li {
+  width: 100px;
+}
+
+.brandslist label {
+  padding-bottom: 5px;
+  font-weight: normal;
+}
+
+#msg {
+  width: 640px;
+  height: 150px;
+  border-radius: 4px;
+  color: grey;
+}
+
+.save-reset-buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.terms {
+  width: 100%;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+
+.terms a {
+  color: grey;
+}
+
+.uploadbtn {
+  width: 220px;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #FCFCFC;
+}
+
+.savebtn {
+  background: #463E5B;
+  color: white;
+  width: 220px;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.resetbtn {
+  background: #FCFCFC;
+  width: 180px;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.choosemore {
+  font-weight: lighter;
+  color: grey;
+}
+
+.chooseone {
+  color: grey;
+}
+
+span {
+  color: red;
+}
