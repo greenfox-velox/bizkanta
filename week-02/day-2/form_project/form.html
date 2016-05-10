@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>form_project</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
   </head>
   <body>
@@ -14,7 +15,7 @@
             <h2>Szemelyes adatok</h2>
             <p>
               <label for="name">Nev <span>*</span></label>
-              <input class="data" type="text" required id="name" placeholder="">
+              <input class="field" type="text" required id="name" placeholder="">
             </p>
             <div class="birth-gender">
               <div class="birth">
@@ -112,23 +113,23 @@
             <h2>Kapcsolat</h2>
             <p>
               <label for="tel">Telefonszam <span>*</span></label>
-              <input class="data" type="tel" required id="tel" placeholder="+36 -- --- ----">
+              <input class="field" type="tel" required id="tel" placeholder="+36 -- --- ----">
             </p>
             <p>
               <label for="email">E-mail cim <span>*</span></label>
-              <input class="data" type="email" required id="email" placeholder="nev@domain.hu">
+              <input class="field" type="email" required id="email" placeholder="nev@domain.hu">
             </p>
             <p>
               <label for="facebook">Facebook profilod</label>
-              <input class="data" type="url" id="facebook" placeholder="http://facebook.com/...">
+              <input class="field" type="url" id="facebook" placeholder="http://facebook.com/...">
             </p>
             <p>
               <label for="twitter">Twitter profilod</label>
-              <input class="data" type="url" id="twitter" placeholder="http://twitter.com/...">
+              <input class="field" type="url" id="twitter" placeholder="http://twitter.com/...">
             </p>
             <p>
               <label for="house">Milyen hazban laksz?</label>
-              <select class="data chooseone" id="house">
+              <select class="field chooseone" id="house">
                 <option disabled selected>valassz tipust</option>
                 <option>csaladi</option>
                 <option>panel</option>
@@ -145,7 +146,7 @@
           <div>
             <p>CV feltoltese</p>
             <input type="file" id="file" value="upload file" style="display: none">
-            <input class="uploadbtn" type="button" value="FILE KIVALASZTASA" onclick="document.getElementById('file').click();">
+            <input class="btn btn-secondary uploadbtn" type="button" value="FILE KIVALASZTASA" onclick="document.getElementById('file').click();">
             <label for="file"></label>
           </div>
           <div>
@@ -156,10 +157,10 @@
           </div>
           <div class="save-reset-buttons">
             <p>
-              <button class="savebtn" type="submit" value="Submit">MENTES</button>
+              <button class="btn btn-primary savebtn" type="submit" value="Submit">MENTES</button>
             </p>
             <p>
-              <button class="resetbtn" type="reset" value="Reset">URLAP TORLESE</button>
+              <button class="btn btn-secondary resetbtn" type="reset" value="Reset">URLAP TORLESE</button>
             </p>
         </div>
         </div>
