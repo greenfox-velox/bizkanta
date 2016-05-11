@@ -5,7 +5,8 @@ p {
   margin: 0;
 }
 
-.box1, .box2 {
+.box1,
+.box2 {
   border: 20px solid green;
   padding: 0;
   margin: 10;
