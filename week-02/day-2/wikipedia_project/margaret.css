@@ -49,11 +49,18 @@ main {
   background: lightgreen;
 }
 
-.profile-box {
+.biobox {
   float: right;
   width: 270px;
   height: 520px;
   background: orange;
+}
+
+.thumb {
+  float: right;
+  border: 1px solid #CCCCCC;
+  padding: 5px;
+  background: #F9F9F9;
 }
 
 footer {
