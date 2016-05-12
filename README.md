@@ -1,5 +1,4 @@
-[link to velox-syllabus](https://github.com/bizkanta/velox-syllabus)
+Look at my Github profile [here](https://github.com/bizkanta)
 
-[link to bizkanta.github.io repo](https://github.com/bizkanta/bizkanta.github.io)
-
-[link to bizkanta.github.io page](https://bizkanta.github.io/)
+You can find my CV here to know more information about me:
+[Click](https://bizkanta.github.io/)
