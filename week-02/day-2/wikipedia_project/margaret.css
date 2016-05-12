@@ -92,7 +92,6 @@ main {
 
 .biobox-img {
   text-align: center;
-
 }
 
 .biobox p {
@@ -124,11 +123,45 @@ footer {
 }
 
 aside {
-  width: 180px;
-  background: lightblue;
+  width: 200px;
   order: 0;
+  background: #F6F6F6;
 }
 
 aside img {
-  width: 130px;
+  padding-top: 10px;
+}
+
+.sidebar-img {
+  text-align: center;
+}
+
+menu {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+aside ul:first-child {
+  padding-left: 0;
+}
+
+aside ul:last-child {
+  border-bottom: none;
+}
+
+aside ul {
+  padding-left: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 8px;
+}
+
+aside p {
+  margin-top: 8px;
+  color: rgba(0,0,0,0.8);
+}
+aside ul li {
+  list-style: none;
 }
