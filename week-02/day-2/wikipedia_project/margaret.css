@@ -78,7 +78,36 @@ main {
   float: right;
   width: 270px;
   height: 520px;
-  background: orange;
+  background: #F6F6F6;
+  border: 1px solid #808080;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.biobox h4 {
+  text-align: center;
+  margin: 5px auto;
+  font-size: 16px;
+}
+
+.biobox-img {
+  text-align: center;
+
+}
+
+.biobox p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.biobox th {
+  text-align: left;
+  vertical-align: top;
+}
+
+.biobox table tr {
+  line-height: 1.5em;
 }
 
 .thumb {
