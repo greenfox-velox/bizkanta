@@ -1,6 +1,14 @@
-body {
+* {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -17,21 +25,29 @@ body {
 header {
   width: 100%;
   height: 100px;
-  background: red;
+  padding: 10px;
+  border-bottom: 1px solid #87C7F7;
 }
 
 .top-navigation {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 nav ul{
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 48px;
+
 }
 
 nav ul li{
   display: inline;
+  padding-right: 5px;
+
+  font-size: 12px;
 }
 
 .bottom-navigation {
@@ -39,14 +55,23 @@ nav ul li{
   justify-content: space-between;
 }
 
+.bottom-navigation ul li {
+  border-right: 1px solid #87C7F7;
+  font-size: 14px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
 form {
   float: right;
+  padding-left: 10px;
 }
 
 main {
   width: 100%;
   height: 100%;
   background: lightgreen;
+  padding: 15px;
 }
 
 .biobox {
