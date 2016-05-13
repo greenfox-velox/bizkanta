@@ -32,20 +32,13 @@ header {
   height: 80px;
   padding: 10px;
   border-bottom: 1px solid #87C7F7;
-}
-
-.top-navigation {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  background: -webkit-linear-gradient(white 50%, #F6F6F6);
 }
 
 nav ul{
   list-style: none;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 28px;
-
 }
 
 nav ul li{
@@ -54,31 +47,53 @@ nav ul li{
   font-size: 12px;
 }
 
+.top-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.top-navigation li:first-child {
+  color: rgba(0,0,0,0.7);
+}
+
 .bottom-navigation {
   display: flex;
   justify-content: space-between;
+  margin-top: 12px;
 }
 
 .bottom-navigation ul li {
   border-right: 1px solid #87C7F7;
-  font-size: 14px;
+  font-size: 13px;
   padding-bottom: 7px;
   padding-top: 10px;
 }
 
-.bottom-navigation ul li:nth-of-type(1) {
+.bottom-navigation ul li:first-child {
   margin-left: -10px;
   padding-left: 5px;
   border-left: 1px solid #87C7F7;
+  background: white;
+  color: black;
+}
+
+.bottom-navigation ul li:first-child a {
+  color: black;
+}
+
+.bottom-navigation ul li:last-child {
+  margin-bottom: 10px;
+  border-right: none;
 }
 
 form {
   float: right;
-  padding-left: 10px;
 }
 
 form input {
-  width: 300px;
+  margin-bottom: 10px;
+  width: 250px;
 }
 
 main {
@@ -91,6 +106,7 @@ main {
 
 .title h1 {
   font-family: Georgia;
+  font-size: 28px;
   font-weight: lighter;
   border-bottom: 1px solid rgba(0,0,0,0.3);
   margin-top: 0;
@@ -121,6 +137,7 @@ section h2 {
   font-weight: lighter;
   border-bottom: 1px solid rgba(0,0,0,0.3);
   padding-bottom: 5px;
+  overflow: hidden;
 }
 
 #section3-1 h2,
@@ -267,20 +284,18 @@ footer {
 footer ul {
   list-style: none;
   padding-left: 0;
-  /*float: left;*/
 }
 
 footer ul li {
-  /*display: inline;*/
   padding-right: 10px;
-    float: left;
-    line-height: 2em;
+  float: left;
+  line-height: 2em;
 }
 
 aside {
   width: 200px;
   order: 0;
-  background: #F6F6F6;
+  background: -webkit-linear-gradient(white, #F6F6F6 3%);
 }
 
 aside img {
@@ -309,9 +324,20 @@ aside ul:last-child {
 aside ul {
   padding-left: 20px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #CCCCCC;
+  border-width:0 0 1px 0;
   margin-bottom: 5px;
   margin-top: 5px;
+  position: relative;
+}
+
+aside ul::after {
+  content:'';
+  width: 140px;
+  position: absolute;
+  left: -10px;
+  bottom: -1px;
+  height: 1px;
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
 }
 
 aside p {
