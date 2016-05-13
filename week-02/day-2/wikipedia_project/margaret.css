@@ -123,6 +123,7 @@ main {
 
 .title h4 {
   padding-left: 22px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-style: italic;
   font-weight: lighter;
@@ -131,6 +132,10 @@ main {
 section {
   font-size: 14px;
   line-height: 1.6em;
+}
+
+.main-section p:first-child{
+  margin-top: 5px;
 }
 
 section h2 {
@@ -210,7 +215,8 @@ section h2 {
 }
 
 .infobox ol li:before {
- content: counters(item, ".") " "; counter-increment: item;
+ content: counters(item, ".") " ";
+ counter-increment: item;
 }
 
 .infobox ol ol li {
