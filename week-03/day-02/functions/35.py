@@ -2,7 +2,7 @@
 
 def factorial(num):
 	number = 1
-	for i in range(1, num + 1):
+	for i in range(2, num + 1):
 		number *= i
 	return number
 
