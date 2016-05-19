@@ -15,7 +15,7 @@ class Student(object):
         total = 0
         for i in self.grades:
             total += i
-            average = total / len(self.grades)
+        average = total / len(self.grades)
         return average
 
 student1 = Student()
