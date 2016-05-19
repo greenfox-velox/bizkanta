@@ -25,12 +25,12 @@ class Student(Person):
         total = 0
         for i in self.grades:
             total += i
-            self.average = total / len(self.grades)
-        print(self.average)
+        average = total / len(self.grades)
+        return average
 
     def salute(self):
         self.greet()
-        self.get_average()
+        print(self.get_average())
 
 student1 = Student('jozsi', 'kovacs')
 
@@ -39,4 +39,4 @@ student1.add_grade(4)
 student1.add_grade(2)
 student1.add_grade(2)
 
-print(student1.salute())
+student1.salute()
