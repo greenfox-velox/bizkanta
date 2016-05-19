@@ -23,5 +23,5 @@ class Pirate(object):
 pirate1 = Pirate(5)
 pirate1.drink_rum()
 pirate1.drink_rum()
-print(pirate1.rum_num)
-print(pirate1.hows_goin_mate())
+print(pirate1.rum_num) #7
+print(pirate1.hows_goin_mate()) #"Arrrr!"

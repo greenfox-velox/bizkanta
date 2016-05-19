@@ -27,10 +27,10 @@ stack1 = Stack()
 
 stack1.push(2)
 stack1.push(3)
-stack1.push(3)
-stack1.push(3)
-print(stack1.pop())
-print(stack1.pop())
+stack1.push(4)
+stack1.push(5)
+print(stack1.pop()) #5
+print(stack1.pop()) #4
 
-print(stack1.nums)
-# print(stack1.size())
+print(stack1.nums) #[2,3]
+print(stack1.size()) #2
