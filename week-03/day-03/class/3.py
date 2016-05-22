@@ -7,9 +7,8 @@
 # "Nothin'" otherwise
 
 class Pirate(object):
-    def __init__(self, rum_num = 0):
-        self.rum_num = rum_num
-
+    def __init__(self):
+        self.rum_num = 0
 
     def drink_rum(self):
         self.rum_num += 1
@@ -20,8 +19,12 @@ class Pirate(object):
         else:
             return "Nothin'"
 
-pirate1 = Pirate(5)
+pirate1 = Pirate()
 pirate1.drink_rum()
 pirate1.drink_rum()
-print(pirate1.rum_num) #7
+pirate1.drink_rum()
+pirate1.drink_rum()
+pirate1.drink_rum()
+
+print(pirate1.rum_num) #5
 print(pirate1.hows_goin_mate()) #"Arrrr!"
