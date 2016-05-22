@@ -5,11 +5,11 @@
 
 # for i in range(1, 101):
 #     if i % 3 == 0 and i % 5 == 0:
-#         print("FizzBuzz")
+#         print('FizzBuzz')
 #     elif i % 3 == 0:
-#         print("Fizz")
+#         print('Fizz')
 #     elif i % 5 == 0:
-#         print("Buzz")
+#         print('Buzz')
 #     else:
 #         print(i)
 #
@@ -17,21 +17,21 @@
 # for i in range(1, 101):
 #     printable = i
 #     if i % 3 == 0 and i % 5 == 0:
-#         printable = "FizzBuzz"
+#         printable = 'FizzBuzz'
 #     elif i % 3 == 0:
-#         printable = "Fizz"
+#         printable = 'Fizz'
 #     elif i % 5 == 0:
-#         printable ="Buzz"
+#         printable ='Buzz'
 #     print(printable)
 
 
 for i in range(1, 101):
-    printable = ""
+    printable = ''
     if i % 3 == 0:
-        printable += "Fizz"
+        printable += 'Fizz'
     if i % 5 == 0:
-        printable += "Buzz"
-    if printable == "":
+        printable += 'Buzz'
+    if printable == '':
         printable = i
     print(printable)
 
@@ -41,11 +41,11 @@ for i in range(1, 101):
 #
 # while i <= 100:
 #     if i % 3 == 0 and i % 5 == 0:
-#         print("FizzBuzz")
+#         print('FizzBuzz')
 #     elif i % 3 == 0:
-#         print("Fizz")
+#         print('Fizz')
 #     elif i % 5 == 0:
-#         print("Buzz")
+#         print('Buzz')
 #     else:
 #         print(i)
 #     i += 1
