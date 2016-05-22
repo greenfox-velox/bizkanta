@@ -4,6 +4,8 @@ out = 0
 # if the aa list contains two element set the out to 2
 # if the aa list contains more than 2 set the out to 10
 # if the aa contains no elements it should set to -1
+
+# first solution
 # if len(aa) == 0:
 #   out = -1
 # elif len(aa) == 1:
@@ -15,6 +17,7 @@ out = 0
 # print(out)
 #
 # ---
+# second solution
 #
 # if len(aa) == 0:
 #   out = -1
@@ -24,6 +27,7 @@ out = 0
 #   out = 10
 # print(out)
 
+# best solution after refactoring
 lenaa = len(aa)
 
 if lenaa == 0:
@@ -32,4 +36,4 @@ elif lenaa > 2:
   out = 10
 else:
   out = lenaa
-print(out)  
+print(out)
