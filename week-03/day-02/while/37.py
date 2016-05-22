@@ -3,10 +3,10 @@
 n = 0
 
 # while n <= 20:
-# 	n += 1
-# 	if n % 2 == 0:
-# 		print(n)
+#     n += 1
+#     if n % 2 == 0:
+#         print(n)
 
 while n <= 20:
-	print(n)
-	n += 2
+    print(n)
+    n += 2
