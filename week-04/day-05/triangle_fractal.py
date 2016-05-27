@@ -1,5 +1,6 @@
 from tkinter import *
 from math import *
+import random
 
 canvas_size = 600
 
@@ -8,14 +9,14 @@ canvas = Canvas(root, width=canvas_size, height=canvas_size)
 canvas.pack()
 
 def fractal(x, y, size):
-    canvas.create_polygon([x, y, x + size, y, x + size/2, y + size*sqrt(3/4)], fill="white", outline='black')
+    height = size * sqrt(3/4)
+    canvas.create_polygon([x, y, x + size, y, x + size/2, y + height], fill='#%06x' % random.randint(0, 0xFFFFFF), outline='black')
     if size < 5:
         pass
     else:
         fractal(x, y, size/2)
         fractal(x + size/2, y, size/2)
-        fractal(x + size/4, y + size*sqrt(3/4)/2, size/2)
-
+        fractal(x + size/4, y + height/2, size/2)
 
 fractal(5, 5, 595)
 
