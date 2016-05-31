@@ -11,7 +11,7 @@ class TestCase(unittest.TestCase):
         self.assertTrue(anagramm('Alma', 'lAma'))
 
     def test_anagramm_with_other_uppercase_letters(self):
-        self.assertFalse(anagramm('Alma', 'Lama'))
+        self.assertTrue(anagramm('Alma', 'Lama'))
 
     def test_anagramm_same_characters_with_spaces(self):
         self.assertTrue(anagramm('al ma', 'l ama'))
@@ -29,7 +29,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(count_letters('alma'), {'a':2, 'l':1, 'm':1})
 
     def test_count_lower_and_uppercase_letters(self):
-        self.assertEqual(count_letters('Alma'), {'A':1, 'l':1, 'm':1, 'a':1})
+        self.assertEqual(count_letters('Alma'), {'a':2, 'l':1, 'm':1})
 
     def test_count_numbers_in_string(self):
         self.assertEqual(count_letters('11233'), {'1':2, '2':1, '3':2})
@@ -41,7 +41,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(count_letters(''), {})
 
     def test_count_integers(self):
-        self.assertNotEqual(count_letters(11233), {'1':2, '2':1, '3':2})
+        self.assertEqual(count_letters(11233), {'1':2, '2':1, '3':2})
 
 
 if __name__ == '__main__':
