@@ -8,6 +8,7 @@ class Todo(object):
             '-l': self.print_action,
             '-a': self.add_action,
             '-r': self.remove_action,
+            # '-c': self.checked_action
         }
 
     def main(self):
@@ -45,14 +46,17 @@ Command line arguments:\n\
 
     def get_todo_list(self):
         f = open(self.file_name, 'r')
-        lines = f.readlines()
-        f.close()
-        if lines == []:
+        text_list = csv.reader(f)
+        # print(list(text_list))
+        if text_list == []:
             return 'No todos for today! :)'
         lines_with_nums = ''
-        for i in range(len(lines)):
-            lines_with_nums += str(i + 1) + ' - ' + '[ ] ' + lines[i]
+        num = 1
+        for element in text_list:
+            lines_with_nums += str(num) + ' - ' + element[0] + '\n'
+            num += 1
         return lines_with_nums
+        f.close()
 
     def add_action(self, arg):
         if len(arg) == 3:
@@ -93,6 +97,17 @@ Command line arguments:\n\
         f.close()
         return new_todos
 
+    # def checked_action(self, arg):
+    #     if len(arg) == 3:
+    #         self.checked_nth_element(int(arg[2]))
+    #
+    # def checked_nth_element(self, num):
+    #     f = open(self.file_name, 'r')
+    #     text_list = csv.reader(f)
+    #     for lines in text_list:
+    #         f.close()
+    #
+    #     f = open(self.file_name, 'w')
 
         # elif len(sys.argv) == 2 and sys.argv[1] == '-l':
         #     print(self.get_todo_list())
