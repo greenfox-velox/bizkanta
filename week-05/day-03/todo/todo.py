@@ -25,9 +25,9 @@ class Todo(object):
                 else:
                     print('Error: Unsupported argument')
         except FileNotFoundError:
-            print('file not found')
             new_file = open(self.file_name, 'a')
             new_file.close()
+            print('file not found')
             print(self.file_name + ' file created')
 
     def menu(self):
@@ -67,7 +67,7 @@ class Todo(object):
             print('Unable to add: No task is provided')
 
     def add_new_todo(self, new_todo):
-        new_item = 'False,' + new_todo
+        new_item = 'False,' + new_todo + '\n'
         f = open(self.file_name,'a')
         f.write(new_item)
         f.close()
@@ -83,15 +83,12 @@ class Todo(object):
         except IndexError:
             print('Unable to remove: Index is out of bound')
 
-
     def remove_nth_element(self, num):
         todo_items = self.get_file_content()
         if num > len(todo_items):
             raise IndexError
-
         index = num - 1
         new_list = todo_items[:index] + todo_items[index + 1:]
-
         self.write_file_content(new_list)
 
     def get_status_mark(self, element):
@@ -129,7 +126,7 @@ class Todo(object):
         return content_list
 
     def write_file_content(self, list):
-        f = open(self.file_name, 'w', newline='')
+        f = open(self.file_name, 'w', newline = '')
         writer = csv.writer(f)
         writer.writerows(list)
         f.close()
