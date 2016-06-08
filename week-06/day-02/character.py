@@ -52,3 +52,11 @@ class Boss(Character):
 
     def draw(self):
         self.draw_character(self.boss_img)
+
+class Skeleton(Character):
+    def __init__(self, x, y, canvas, game):
+        super().__init__(x, y, canvas, game)
+        self.skeleton_img = PhotoImage(file ='skeleton.png')
+
+    def draw(self):
+        self.draw_character(self.skeleton_img)
