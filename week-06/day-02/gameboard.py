@@ -1,4 +1,5 @@
 from tile import *
+from character import *
 
 wholemap = [
 [0,1,1,0,1,0,0,0,0,0],
@@ -30,8 +31,8 @@ class GameBoard(object):
         for i in self.Map_list:
             i.draw()
 
-    def is_floor(self, x, y):
-        if self.wholemap[y][x] == 0:
-            return True
-        else:
-            return False
+    def is_map_boundaries(self, x, y):
+        return x >= 0 and x <= 9 and y >= 0 and y <= 9
+
+    def is_stop_at_wall(self, x, y):
+        return self.wholemap[y][x] == 0
