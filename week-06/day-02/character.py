@@ -6,7 +6,6 @@ class Character(object):
         self.y = y
         self.offset = 72
         self.canvas = canvas
-        self.hero_img = PhotoImage(file ='hero-down.png')
 
     def draw_character(self, img):
         self.canvas.create_image(self.x * self.offset, self.y * self.offset, image = img, anchor = NW)
@@ -14,6 +13,39 @@ class Character(object):
 class Hero(Character):
     def __init__(self, x, y, canvas):
         super().__init__(x, y, canvas)
+        self.hero_img = PhotoImage(file ='hero-down.png')
 
     def draw(self):
-        self.draw_character(self.hero_img)
+        self.draw_character(self.hero_img)            
+
+    def move_down(self, event):
+        self.hero_img = PhotoImage(file ='hero-down.png')
+        if self.y < 9:
+            self.y += 1
+        self.draw()
+
+    def move_right(self, event):
+        self.hero_img = PhotoImage(file ='hero-right.png')
+        if self.x < 9:
+            self.x += 1
+        self.draw()
+
+    def move_up(self, event):
+        self.hero_img = PhotoImage(file ='hero-up.png')
+        if self.y > 0:
+            self.y -= 1
+        self.draw()
+
+    def move_left(self, event):
+        self.hero_img = PhotoImage(file ='hero-left.png')
+        if self.x > 0:
+            self.x -= 1
+        self.draw()
+
+class Boss(Character):
+    def __init__(self, x, y, canvas):
+        super().__init__(x, y, canvas)
+        self.boss_img = PhotoImage(file ='boss.png')
+
+    def draw(self):
+        self.draw_character(self.boss_img)

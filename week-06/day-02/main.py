@@ -11,7 +11,14 @@ canvas.pack()
 game = GameBoard(canvas)
 game.draw()
 
-hero = Hero(0,1,canvas)
+hero = Hero(0, 0, canvas)
 hero.draw()
+root.bind('<Down>', hero.move_down)
+root.bind('<Right>', hero.move_right)
+root.bind('<Up>', hero.move_up)
+root.bind('<Left>', hero.move_left)
+
+boss = Boss(4, 5, canvas)
+boss.draw()
 
 root.mainloop()
