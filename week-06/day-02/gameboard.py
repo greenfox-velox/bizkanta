@@ -19,6 +19,7 @@ columns = 10
 class GameBoard(object):
     def __init__(self, canvas):
         self.Map_list = []
+        self.wholemap = wholemap
         for row in range(rows):
             for column in range(columns):
                 if wholemap[column][row] == 0:
@@ -28,3 +29,9 @@ class GameBoard(object):
     def draw(self):
         for i in self.Map_list:
             i.draw()
+
+    def is_floor(self, x, y):
+        if self.wholemap[y][x] == 0:
+            return True
+        else:
+            return False
