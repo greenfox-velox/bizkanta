@@ -1,5 +1,4 @@
 from tile import *
-from character import *
 
 wholemap = [
 [0,1,1,0,1,0,0,0,0,0],
@@ -17,7 +16,7 @@ wholemap = [
 rows = 10
 columns = 10
 
-class GameBoard(object):
+class Map(object):
     def __init__(self, canvas):
         self.Map_list = []
         self.canvas = canvas
@@ -37,13 +36,3 @@ class GameBoard(object):
 
     def is_stop_at_wall(self, x, y):
         return self.wholemap[y][x] == 0
-
-class Statistics():
-    def __init__(self, canvas, hero):
-        self.canvas = canvas
-        self.hero = hero
-        self.x = 850
-        self.y = 100
-
-    def draw_text(self):
-        self.canvas.create_text(self.x, self.y, text = 'Hero + (Level ' + str(self.hero.level) + ') HP: ' + str(self.hero.hp) + '/' + str(self.hero.max_hp) + ' | DP: ' + str(self.hero.dp) + ' | SP: ' + str(self.hero.sp))
