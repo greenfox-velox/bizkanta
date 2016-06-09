@@ -1,7 +1,5 @@
 from tkinter import *
 
-# hero_img = PhotoImage(file = 'hero-down.png')
-
 class Tile(object):
     def __init__(self, x, y, canvas):
         self.x = x

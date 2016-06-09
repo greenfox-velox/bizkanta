@@ -9,7 +9,7 @@ class Character(object):
         self.offset = 72
         self.canvas = canvas
         self.game = game
-        self.dice = self.dice()
+        self.dice_num = self.dice()
 
     def draw_character(self, img):
         self.canvas.create_image(self.x * self.offset, self.y * self.offset, image = img, anchor = NW)
@@ -23,9 +23,11 @@ class Hero(Character):
         super().__init__(x, y, canvas, game)
         self.hero_img = PhotoImage(file ='hero-down.png')
         self.level = 1
-        self.HP = 20 + self.dice + self.dice + self.dice
-        self.DP = self.dice * self.dice
-        self.SP = 5 + self.dice
+        self.max_hp = 100
+        self.current_hp = 100
+        self.hp = 20 + self.dice_num + self.dice_num + self.dice_num
+        self.dp = self.dice_num * self.dice_num
+        self.sp = 5 + self.dice_num
 
     def draw(self):
         self.draw_character(self.hero_img)
@@ -68,10 +70,10 @@ class Boss(Character):
     def __init__(self, x, y, canvas, game):
         super().__init__(x, y, canvas, game)
         self.level = 1
-        self.HP = 2 * self.level * self.dice + self.dice
-        self.DP = self.level/2 * self.dice + self.dice/2
-        self.SP = self.level * self.dice + self.level
         self.boss_img = PhotoImage(file ='boss.png')
+        # self.HP = 2 * self.level * self.dice + self.dice
+        # self.DP = self.level/2 * self.dice + self.dice/2
+        # self.SP = self.level * self.dice + self.level
 
     def draw(self):
         self.draw_character(self.boss_img)
@@ -81,9 +83,9 @@ class Skeleton(Character):
         super().__init__(x, y, canvas, game)
         self.level = 1
         self.skeleton_img = PhotoImage(file ='skeleton.png')
-        self.HP = 2 * self.level * self.dice
-        self.DP = self.level/2 * self.dice
-        self.SP = self.level * self.dice
+        # self.HP = 2 * self.level * self.dice
+        # self.DP = self.level/2 * self.dice
+        # self.SP = self.level * self.dice
 
     def draw(self):
         self.draw_character(self.skeleton_img)
