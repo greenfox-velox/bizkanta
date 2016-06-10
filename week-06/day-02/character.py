@@ -46,6 +46,9 @@ class Hero(Character):
         self.hero_img = PhotoImage(file ='hero-left.png')
         self.x -= 1
 
+    def current_pos(self, x, y):
+        self.draw(x, y)
+
 class Boss(Character):
     def __init__(self, x, y, canvas):
         super().__init__(x, y, canvas)
@@ -69,3 +72,17 @@ class Skeleton(Character):
 
     def draw(self):
         self.draw_character(self.skeleton_img)
+
+class Bomb(Character):
+    def __init__(self, x, y, canvas):
+        super().__init__(x, y, canvas)
+        self.bomb_img = PhotoImage(file ='bomb.png')
+        self.explode_img = PhotoImage(file ='expl.png')
+
+    def draw(self, x, y):
+        self.x = x
+        self.y = y
+        self.draw_character(self.bomb_img)
+
+    def explode(self, x, y):
+        self.draw_character(self.explode_img)

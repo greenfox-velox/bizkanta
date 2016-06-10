@@ -8,11 +8,14 @@ class Game(object):
         self.canvas = canvas
         self.map = Map(canvas)
         self.hero = Hero(0,0, canvas)
+        self.hero_current_pos = Hero(self.hero.x, self.hero.y, canvas)
         self.boss = Boss(4,5, canvas)
         self.skeleton1 = Skeleton(9,7, canvas)
         self.skeleton2 = Skeleton(5,1, canvas)
         self.skeleton3 = Skeleton(2,9, canvas)
         self.hero_stat = Stat(canvas, self.hero)
+        self.bomb = Bomb(self.hero.x, self.hero.y, canvas)
+        self.explode = Bomb(self.hero.x, self.hero.y, canvas)
 
     def draw_all(self):
         self.map.draw()
@@ -40,3 +43,7 @@ class Game(object):
             if self.map.is_map_boundaries(self.hero.x - 1, self.hero.y) and self.map.is_stop_at_wall(self.hero.x - 1, self.hero.y):
                 self.hero.move_left()
                 self.hero.draw()
+        if event.keysym == 'space':
+            self.bomb.draw(self.hero.x, self.hero.y)
+        if event.keysym == 'a':
+            self.bomb.explode(self.hero.x, self.hero.y)
