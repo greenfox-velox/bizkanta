@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+  background-color: #D6FACA;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0;
+}
+
+main {
+  position: relative;
+  max-width: 1000px;
+}
+
+.mainpic {
+  max-width: 500px;
+  width: 100%;
+  max-height: 350px;
+  border: 2px solid darkgreen;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pic {
+  height: 120px;
+  margin: 10px;
+  border: 1px solid darkgreen;
+}
+
+.arrow {
+  font-size: 2em;
+}
+
+.arrow_left {
+  position: absolute;
+  top: 130px;
+  left: 140px;
+}
+
+.arrow_right {
+  position: absolute;
+  top: 130px;
+  right: 140px;
+}
+
+.thumbnail_wrapper {
+  position: relative;
+}
+
+.littlepic_arrow_left {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.littlepic_arrow_right {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+  }
