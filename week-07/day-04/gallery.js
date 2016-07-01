@@ -1,4 +1,4 @@
-var actualIndex = 3;
+var actualIndex = 0;
 
 var images = [
   'pictures/img_1.jpg',
@@ -7,23 +7,27 @@ var images = [
   'pictures/img_4.jpg',
   'pictures/img_5.jpg',
   'pictures/img_6.jpg',
+  'pictures/img_7.jpg',
+  'pictures/img_8.jpg',
 ];
 
 var thumbnails = document.querySelector('.thumbnails');
-var prevButton = document.querySelector('.arrow_left');
-var nextButton = document.querySelector('.arrow_right');
-var thumbnailsPrevButton = document.querySelector('.littlepic_arrow_left');
-var thumbnailsNextButton = document.querySelector('.littlepic_arrow_right');
+var prevButton = document.querySelector('.left_button');
+var nextButton = document.querySelector('.right_button');
+var thumbnailsPrevButton = document.querySelector('.thumbnail_left_button');
+var thumbnailsNextButton = document.querySelector('.thumbnail_right_button');
 var mainpic = document.querySelector('.mainpic');
-var imgTitle = document.querySelector('h4');
+var imgTitle = document.querySelector('h3');
 
 updateState();
 
 thumbnails.addEventListener('click', changeImgByClicking);
-prevButton.addEventListener('click', prevWithArrow);
-nextButton.addEventListener('click', nextWithArrow);
-thumbnailsPrevButton.addEventListener('click', prevWithArrow);
-thumbnailsNextButton.addEventListener('click', nextWithArrow);
+prevButton.addEventListener('click', pressPrevButton);
+nextButton.addEventListener('click', pressNextButton);
+thumbnailsPrevButton.addEventListener('click', pressPrevButton);
+thumbnailsNextButton.addEventListener('click', pressNextButton);
+thumbnails.addEventListener('mouseover', hoverOnImage);
+thumbnails.addEventListener('mouseout', hoverOutImage);
 
 function updateState() {
   generateThumbnails();
@@ -53,17 +57,19 @@ function generateThumbnails() {
 }
 
 function getVisibleThumbnails() {
+  var oneBeforPrev = images[getIndexByStep(-2)];
   var prev = images[getIndexByStep(-1)];
   var current = images[actualIndex];
   var next = images[getIndexByStep(1)];
-  return [prev, current, next];
+  var oneAfterNext = images[getIndexByStep(2)];
+  return [oneBeforPrev, prev, current, next, oneAfterNext];
 }
 
-function nextWithArrow() {
+function pressNextButton() {
   changeImgByStep(1);
 }
 
-function prevWithArrow() {
+function pressPrevButton() {
   changeImgByStep(-1);
 }
 
@@ -81,5 +87,19 @@ function changeImgByClicking(event) {
   if (element.src) {
     actualIndex = parseInt(element.getAttribute('data-index'));
     updateState();
+  }
+}
+
+function hoverOnImage(event) {
+  var element = event.target;
+  if (element.src) {
+    element.classList.add('thick_border');
+  }
+}
+
+function hoverOutImage(event) {
+  var element = event.target;
+  if (element.src) {
+    element.classList.remove('thick_border');
   }
 }
