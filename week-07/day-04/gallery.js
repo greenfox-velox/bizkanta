@@ -1,3 +1,5 @@
+'use strict';
+
 var actualIndex = 0;
 
 var images = [
@@ -36,7 +38,7 @@ function updateState() {
 }
 
 function setMainImgSrc() {
-  mainpic.setAttribute('src', images[actualIndex])
+  mainpic.setAttribute('src', images[actualIndex]);
 }
 
 function setImgTitle() {
