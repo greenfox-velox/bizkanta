@@ -59,12 +59,12 @@ function generateThumbnails() {
 }
 
 function getVisibleThumbnails() {
-  var oneBeforPrev = images[getIndexByStep(-2)];
+  var oneBeforePrev = images[getIndexByStep(-2)];
   var prev = images[getIndexByStep(-1)];
   var current = images[actualIndex];
   var next = images[getIndexByStep(1)];
   var oneAfterNext = images[getIndexByStep(2)];
-  return [oneBeforPrev, prev, current, next, oneAfterNext];
+  return [oneBeforePrev, prev, current, next, oneAfterNext];
 }
 
 function pressNextButton() {
