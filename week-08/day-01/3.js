@@ -19,5 +19,7 @@ Rectangle.prototype.getCircumference = function() {
 };
 
 var rectangle1 = new Rectangle(4, 5);
-console.log(rectangle1.getArea());
-console.log(rectangle1.getCircumference());
+// console.log(rectangle1.getArea());
+// console.log(rectangle1.getCircumference());
+
+module.exports.Rectangle = Rectangle;
