@@ -9,12 +9,6 @@ var url = 'https://mysterious-dusk-8248.herokuapp.com/todos/';
 
 getTodosFromServer(insertItemsToDOM);
 
-function newTodoItem(event) {
-  var todoText = inputField.value;
-  addTodoToServer(todoText, appendTodo);
-  inputField.value = '';
-}
-
 function getTodosFromServer(callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url);
@@ -74,6 +68,12 @@ function insertItemsToDOM(items) {
   });
 }
 
+function newTodoItem(event) {
+  var todoText = inputField.value;
+  addTodoToServer(todoText, appendTodo);
+  inputField.value = '';
+}
+
 function deleteItemFromDOM(item) {
   document.getElementById(item.id).remove();
 }
@@ -89,17 +89,16 @@ function appendTodo(item) {
     var completeIcon = document.createElement('button');
     todoItem.setAttribute('id', item.id);
     todoItem.innerText = item.text;
-    todoItem.appendChild(trashIcon);
     todoItem.appendChild(completeIcon);
-    trashIcon.classList.add('btn');
+    todoItem.appendChild(trashIcon);
     completeIcon.classList.add('btn');
-    trashIcon.classList.add('trash-button');
+    trashIcon.classList.add('btn');
     completeIcon.classList.add('check-button');
-    todoItem.classList.add('li_style');
+    trashIcon.classList.add('trash-button');
+    trashIcon.addEventListener('click', trashIconEvent(item))
     if (item.completed) {
       todoItem.classList.add('completed');
     }
-    trashIcon.addEventListener('click', trashIconEvent(item))
     completeIcon.addEventListener('click', function() {
       completeTodoInServer({
         id: item.id,
