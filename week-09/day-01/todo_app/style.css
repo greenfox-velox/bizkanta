@@ -1,0 +1,79 @@
+body {
+  background: #50e3c2;
+}
+
+.container {
+  width: 470px;
+  height: 570px;
+  background: #f7f7f7;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 64px;
+  color: #616161;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#text {
+  height: 35px;
+  width: 330px;
+  outline: none;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-item {
+  font-family: Lato, sans-serif;
+  font-size: 26px;
+  line-height: 2.2;
+  color: #616161;
+  list-style-type: none;
+}
+
+.add_button {
+  font-family: Lato, sans-serif;
+  font-size: 26px;
+  color: #ffffff;
+  background: #df69e8;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.trash-button {
+  background:url(./icons/delete-32.png) no-repeat;
+  background-size: 30px;
+}
+
+
+:not(.completed) .check-button {
+  background:url(./icons/empty_circle.png) no-repeat;
+  background-size: 30px;
+}
+
+.completed .check-button {
+  background:url(./icons/check_circle.png) no-repeat;
+  background-size: 30px;
+}
+
+.completed {
+  color: #EEA3F0;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 33px;
+  margin-top: 12px;
+  opacity: 0.6;
+  float: right;
+}
