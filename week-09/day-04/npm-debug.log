@@ -1,0 +1,2129 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'mongodb' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.6
+4 verbose install initial load of C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\package.json
+5 verbose installManyTop reading scoped package data from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\eslint\package.json
+6 verbose installManyTop reading scoped package data from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\eslint-config-airbnb\package.json
+7 verbose installManyTop reading scoped package data from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\eslint-plugin-import\package.json
+8 verbose installManyTop reading scoped package data from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\eslint-plugin-jsx-a11y\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\eslint-plugin-react\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\package.json
+11 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\package.json
+12 verbose install mongodb is installed as 2.2.1
+13 silly cache add args [ 'mongodb', null ]
+14 verbose cache add spec mongodb
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'mongodb',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'mongodb',
+15 silly cache add   rawSpec: '',
+15 silly cache add   spec: 'latest',
+15 silly cache add   type: 'tag' }
+16 silly addNamed mongodb@latest
+17 verbose addNamed "latest" is being treated as a dist-tag for mongodb
+18 info addNameTag [ 'mongodb', 'latest' ]
+19 silly mapToRegistry name mongodb
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: 'mongodb',
+22 silly mapToRegistry   scope: null,
+22 silly mapToRegistry   name: 'mongodb',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+24 verbose addNameTag registry:https://registry.npmjs.org/mongodb not in flight; fetching
+25 verbose request uri https://registry.npmjs.org/mongodb
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 14:25:59
+28 verbose request id 30b6a301dd42d960
+29 verbose etag "5ZO20OM460WYMSLIEB06J2X10"
+30 http request GET https://registry.npmjs.org/mongodb
+31 http 304 https://registry.npmjs.org/mongodb
+32 verbose headers { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   etag: '"5ZO20OM460WYMSLIEB06J2X10"',
+32 verbose headers   age: '283',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+32 verbose headers   'x-cache': 'HIT',
+32 verbose headers   'x-cache-hits': '1',
+32 verbose headers   'x-timer': 'S1468499161.193743,VS0,VE0',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 silly get cb [ 304,
+33 silly get   { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     'cache-control': 'max-age=300',
+33 silly get     etag: '"5ZO20OM460WYMSLIEB06J2X10"',
+33 silly get     age: '283',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-lcy1130-LCY',
+33 silly get     'x-cache': 'HIT',
+33 silly get     'x-cache-hits': '1',
+33 silly get     'x-timer': 'S1468499161.193743,VS0,VE0',
+33 silly get     vary: 'Accept-Encoding' } ]
+34 verbose etag https://registry.npmjs.org/mongodb from cache
+35 verbose get saving mongodb to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\mongodb\.cache.json
+36 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+37 silly addNameTag next cb for mongodb with tag latest
+38 silly addNamed mongodb@2.2.1
+39 verbose addNamed "2.2.1" is a plain semver version for mongodb
+40 silly cache afterAdd mongodb@2.2.1
+41 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\mongodb\2.2.1\package\package.json not in flight; writing
+42 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+43 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\mongodb\2.2.1\package\package.json written
+44 silly install resolved [ { name: 'mongodb',
+44 silly install resolved     version: '2.2.1',
+44 silly install resolved     description: 'The official MongoDB driver for Node.js',
+44 silly install resolved     main: 'index.js',
+44 silly install resolved     repository:
+44 silly install resolved      { type: 'git',
+44 silly install resolved        url: 'git+ssh://git@github.com/mongodb/node-mongodb-native.git' },
+44 silly install resolved     keywords: [ 'mongodb', 'driver', 'official' ],
+44 silly install resolved     dependencies:
+44 silly install resolved      { 'es6-promise': '3.0.2',
+44 silly install resolved        'mongodb-core': '2.0.4',
+44 silly install resolved        'readable-stream': '1.0.31' },
+44 silly install resolved     devDependencies:
+44 silly install resolved      { JSONStream: '^1.0.7',
+44 silly install resolved        betterbenchmarks: '^0.1.0',
+44 silly install resolved        bluebird: '2.9.27',
+44 silly install resolved        bson: '^0.5.1',
+44 silly install resolved        'cli-table': '^0.3.1',
+44 silly install resolved        co: '4.5.4',
+44 silly install resolved        colors: '^1.1.2',
+44 silly install resolved        coveralls: '^2.11.6',
+44 silly install resolved        'event-stream': '^3.3.2',
+44 silly install resolved        gleak: '0.5.0',
+44 silly install resolved        integra: '0.1.8',
+44 silly install resolved        jsdoc: '3.3.0-beta3',
+44 silly install resolved        'ldjson-stream': '^1.2.1',
+44 silly install resolved        'mongodb-extended-json': '1.3.0',
+44 silly install resolved        'mongodb-topology-manager': '1.0.x',
+44 silly install resolved        'mongodb-version-manager': '^0.8.10',
+44 silly install resolved        nyc: '^5.5.0',
+44 silly install resolved        optimist: '0.6.1',
+44 silly install resolved        rimraf: '2.2.6',
+44 silly install resolved        semver: '5.1.0',
+44 silly install resolved        'worker-farm': '^1.3.1' },
+44 silly install resolved     author: { name: 'Christian Kvalheim' },
+44 silly install resolved     license: 'Apache-2.0',
+44 silly install resolved     engines: { node: '>=0.10.3' },
+44 silly install resolved     bugs: { url: 'https://github.com/mongodb/node-mongodb-native/issues' },
+44 silly install resolved     scripts:
+44 silly install resolved      { test: 'node test/runner.js -t functional',
+44 silly install resolved        coverage: 'nyc node test/runner.js -t functional && node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls' },
+44 silly install resolved     nyc: { include: [Object] },
+44 silly install resolved     homepage: 'https://github.com/mongodb/node-mongodb-native',
+44 silly install resolved     gitHead: '2c3d141d9ba22e0030690d33984b3dce8a2afd44',
+44 silly install resolved     _id: 'mongodb@2.2.1',
+44 silly install resolved     _shasum: '9df0a6e8c930d941abac8bd3150957f2e707a978',
+44 silly install resolved     _from: 'mongodb@latest',
+44 silly install resolved     _npmVersion: '2.15.1',
+44 silly install resolved     _nodeVersion: '4.4.4',
+44 silly install resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+44 silly install resolved     maintainers: [ [Object] ],
+44 silly install resolved     dist:
+44 silly install resolved      { shasum: '9df0a6e8c930d941abac8bd3150957f2e707a978',
+44 silly install resolved        tarball: 'https://registry.npmjs.org/mongodb/-/mongodb-2.2.1.tgz' },
+44 silly install resolved     _npmOperationalInternal:
+44 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+44 silly install resolved        tmp: 'tmp/mongodb-2.2.1.tgz_1468231103186_0.33855290012434125' },
+44 silly install resolved     directories: {},
+44 silly install resolved     _resolved: 'https://registry.npmjs.org/mongodb/-/mongodb-2.2.1.tgz',
+44 silly install resolved     readme: 'ERROR: No README data found!' } ]
+45 info install mongodb@2.2.1 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+46 info installOne mongodb@2.2.1
+47 verbose installOne of mongodb to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04 not in flight; installing
+48 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+49 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\mongodb-8e7569b67f0cb190.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+50 silly install write writing mongodb 2.2.1 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+51 verbose unbuild node_modules\mongodb
+52 info preuninstall mongodb@2.2.1
+53 info uninstall mongodb@2.2.1
+54 verbose unbuild rmStuff mongodb@2.2.1 from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules
+55 info postuninstall mongodb@2.2.1
+56 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+57 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+58 silly vacuum-fs purging C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+59 silly vacuum-fs quitting because other entries in C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules
+60 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\mongodb\2.2.1\package.tgz
+61 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+62 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb is being purged
+63 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+64 silly gunzTarPerm modes [ '777', '666' ]
+65 silly gunzTarPerm extractEntry package.json
+66 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+67 silly gunzTarPerm extractEntry README.md
+68 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+69 silly gunzTarPerm extractEntry LICENSE
+70 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+71 silly gunzTarPerm extractEntry test9.js
+72 silly gunzTarPerm modified mode [ 'test9.js', 420, 438 ]
+73 silly gunzTarPerm extractEntry test8.js
+74 silly gunzTarPerm modified mode [ 'test8.js', 420, 438 ]
+75 silly gunzTarPerm extractEntry test11.js
+76 silly gunzTarPerm modified mode [ 'test11.js', 420, 438 ]
+77 silly gunzTarPerm extractEntry boot_auth.js
+78 silly gunzTarPerm modified mode [ 'boot_auth.js', 420, 438 ]
+79 silly gunzTarPerm extractEntry test10.js
+80 silly gunzTarPerm modified mode [ 'test10.js', 420, 438 ]
+81 silly gunzTarPerm extractEntry index.js
+82 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+83 silly gunzTarPerm extractEntry lib/admin.js
+84 silly gunzTarPerm modified mode [ 'lib/admin.js', 420, 438 ]
+85 silly gunzTarPerm extractEntry lib/command_cursor.js
+86 silly gunzTarPerm modified mode [ 'lib/command_cursor.js', 420, 438 ]
+87 silly gunzTarPerm extractEntry lib/cursor.js
+88 silly gunzTarPerm modified mode [ 'lib/cursor.js', 420, 438 ]
+89 silly gunzTarPerm extractEntry lib/db.js
+90 silly gunzTarPerm modified mode [ 'lib/db.js', 420, 438 ]
+91 silly gunzTarPerm extractEntry lib/collection.js
+92 silly gunzTarPerm modified mode [ 'lib/collection.js', 420, 438 ]
+93 silly gunzTarPerm extractEntry lib/aggregation_cursor.js
+94 silly gunzTarPerm modified mode [ 'lib/aggregation_cursor.js', 420, 438 ]
+95 silly gunzTarPerm extractEntry lib/metadata.js
+96 silly gunzTarPerm modified mode [ 'lib/metadata.js', 420, 438 ]
+97 silly gunzTarPerm extractEntry lib/mongo_client.js
+98 silly gunzTarPerm modified mode [ 'lib/mongo_client.js', 420, 438 ]
+99 silly gunzTarPerm extractEntry lib/mongos.js
+100 silly gunzTarPerm modified mode [ 'lib/mongos.js', 420, 438 ]
+101 silly gunzTarPerm extractEntry lib/read_preference.js
+102 silly gunzTarPerm modified mode [ 'lib/read_preference.js', 420, 438 ]
+103 silly gunzTarPerm extractEntry lib/url_parser.js
+104 silly gunzTarPerm modified mode [ 'lib/url_parser.js', 420, 438 ]
+105 silly gunzTarPerm extractEntry lib/replset.js
+106 silly gunzTarPerm modified mode [ 'lib/replset.js', 420, 438 ]
+107 silly gunzTarPerm extractEntry lib/apm.js
+108 silly gunzTarPerm modified mode [ 'lib/apm.js', 420, 438 ]
+109 silly gunzTarPerm extractEntry lib/server.js
+110 silly gunzTarPerm modified mode [ 'lib/server.js', 420, 438 ]
+111 silly gunzTarPerm extractEntry lib/topology_base.js
+112 silly gunzTarPerm modified mode [ 'lib/topology_base.js', 420, 438 ]
+113 silly gunzTarPerm extractEntry lib/utils.js
+114 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 438 ]
+115 silly gunzTarPerm extractEntry lib/gridfs/chunk.js
+116 silly gunzTarPerm modified mode [ 'lib/gridfs/chunk.js', 420, 438 ]
+117 silly gunzTarPerm extractEntry lib/gridfs/grid_store.js
+118 silly gunzTarPerm modified mode [ 'lib/gridfs/grid_store.js', 420, 438 ]
+119 silly gunzTarPerm extractEntry lib/bulk/common.js
+120 silly gunzTarPerm modified mode [ 'lib/bulk/common.js', 420, 438 ]
+121 silly gunzTarPerm extractEntry lib/bulk/ordered.js
+122 silly gunzTarPerm modified mode [ 'lib/bulk/ordered.js', 420, 438 ]
+123 silly gunzTarPerm extractEntry lib/bulk/unordered.js
+124 silly gunzTarPerm modified mode [ 'lib/bulk/unordered.js', 420, 438 ]
+125 silly gunzTarPerm extractEntry lib/gridfs-stream/download.js
+126 silly gunzTarPerm modified mode [ 'lib/gridfs-stream/download.js', 420, 438 ]
+127 silly gunzTarPerm extractEntry lib/gridfs-stream/index.js
+128 silly gunzTarPerm modified mode [ 'lib/gridfs-stream/index.js', 420, 438 ]
+129 silly gunzTarPerm extractEntry lib/gridfs-stream/upload.js
+130 silly gunzTarPerm modified mode [ 'lib/gridfs-stream/upload.js', 420, 438 ]
+131 silly gunzTarPerm extractEntry HISTORY.md
+132 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 438 ]
+133 silly gunzTarPerm extractEntry conf.json
+134 silly gunzTarPerm modified mode [ 'conf.json', 420, 438 ]
+135 silly gunzTarPerm extractEntry Makefile
+136 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+137 silly gunzTarPerm extractEntry .coveralls.yml
+138 silly gunzTarPerm modified mode [ '.coveralls.yml', 420, 438 ]
+139 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\package.json
+140 info preinstall mongodb@2.2.1
+141 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\package.json
+142 silly prepareForInstallMany adding es6-promise@3.0.2 from mongodb dependencies
+143 silly prepareForInstallMany adding mongodb-core@2.0.4 from mongodb dependencies
+144 silly prepareForInstallMany adding readable-stream@1.0.31 from mongodb dependencies
+145 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\package.json
+146 silly cache add args [ 'readable-stream@1.0.31', null ]
+147 verbose cache add spec readable-stream@1.0.31
+148 silly cache add parsed spec Result {
+148 silly cache add   raw: 'readable-stream@1.0.31',
+148 silly cache add   scope: null,
+148 silly cache add   name: 'readable-stream',
+148 silly cache add   rawSpec: '1.0.31',
+148 silly cache add   spec: '1.0.31',
+148 silly cache add   type: 'version' }
+149 silly addNamed readable-stream@1.0.31
+150 verbose addNamed "1.0.31" is a plain semver version for readable-stream
+151 silly mapToRegistry name readable-stream
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry data Result {
+154 silly mapToRegistry   raw: 'readable-stream',
+154 silly mapToRegistry   scope: null,
+154 silly mapToRegistry   name: 'readable-stream',
+154 silly mapToRegistry   rawSpec: '',
+154 silly mapToRegistry   spec: 'latest',
+154 silly mapToRegistry   type: 'tag' }
+155 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+156 verbose addNameVersion registry:https://registry.npmjs.org/readable-stream not in flight; fetching
+157 silly cache add args [ 'mongodb-core@2.0.4', null ]
+158 verbose cache add spec mongodb-core@2.0.4
+159 silly cache add parsed spec Result {
+159 silly cache add   raw: 'mongodb-core@2.0.4',
+159 silly cache add   scope: null,
+159 silly cache add   name: 'mongodb-core',
+159 silly cache add   rawSpec: '2.0.4',
+159 silly cache add   spec: '2.0.4',
+159 silly cache add   type: 'version' }
+160 silly addNamed mongodb-core@2.0.4
+161 verbose addNamed "2.0.4" is a plain semver version for mongodb-core
+162 silly mapToRegistry name mongodb-core
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry https://registry.npmjs.org/
+165 silly mapToRegistry data Result {
+165 silly mapToRegistry   raw: 'mongodb-core',
+165 silly mapToRegistry   scope: null,
+165 silly mapToRegistry   name: 'mongodb-core',
+165 silly mapToRegistry   rawSpec: '',
+165 silly mapToRegistry   spec: 'latest',
+165 silly mapToRegistry   type: 'tag' }
+166 silly mapToRegistry uri https://registry.npmjs.org/mongodb-core
+167 verbose addNameVersion registry:https://registry.npmjs.org/mongodb-core not in flight; fetching
+168 silly cache add args [ 'es6-promise@3.0.2', null ]
+169 verbose cache add spec es6-promise@3.0.2
+170 silly cache add parsed spec Result {
+170 silly cache add   raw: 'es6-promise@3.0.2',
+170 silly cache add   scope: null,
+170 silly cache add   name: 'es6-promise',
+170 silly cache add   rawSpec: '3.0.2',
+170 silly cache add   spec: '3.0.2',
+170 silly cache add   type: 'version' }
+171 silly addNamed es6-promise@3.0.2
+172 verbose addNamed "3.0.2" is a plain semver version for es6-promise
+173 silly mapToRegistry name es6-promise
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry data Result {
+176 silly mapToRegistry   raw: 'es6-promise',
+176 silly mapToRegistry   scope: null,
+176 silly mapToRegistry   name: 'es6-promise',
+176 silly mapToRegistry   rawSpec: '',
+176 silly mapToRegistry   spec: 'latest',
+176 silly mapToRegistry   type: 'tag' }
+177 silly mapToRegistry uri https://registry.npmjs.org/es6-promise
+178 verbose addNameVersion registry:https://registry.npmjs.org/es6-promise not in flight; fetching
+179 verbose request uri https://registry.npmjs.org/readable-stream
+180 verbose request no auth needed
+181 info attempt registry request try #1 at 14:26:00
+182 verbose etag "E9VURFQDJSVN7SKYIIMYUOYYK"
+183 http request GET https://registry.npmjs.org/readable-stream
+184 verbose request uri https://registry.npmjs.org/mongodb-core
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 14:26:00
+187 verbose etag "48PXPZBMMOGI4A6CY11VPQAS6"
+188 http request GET https://registry.npmjs.org/mongodb-core
+189 verbose request uri https://registry.npmjs.org/es6-promise
+190 verbose request no auth needed
+191 info attempt registry request try #1 at 14:26:00
+192 verbose etag "2NULQ1TLQHG12IFQTCP0OBQFC"
+193 http request GET https://registry.npmjs.org/es6-promise
+194 http 304 https://registry.npmjs.org/readable-stream
+195 verbose headers { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+195 verbose headers   via: '1.1 varnish',
+195 verbose headers   'cache-control': 'max-age=300',
+195 verbose headers   etag: '"E9VURFQDJSVN7SKYIIMYUOYYK"',
+195 verbose headers   age: '46',
+195 verbose headers   connection: 'keep-alive',
+195 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+195 verbose headers   'x-cache': 'HIT',
+195 verbose headers   'x-cache-hits': '600',
+195 verbose headers   'x-timer': 'S1468499161.764896,VS0,VE0',
+195 verbose headers   vary: 'Accept-Encoding' }
+196 silly get cb [ 304,
+196 silly get   { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+196 silly get     via: '1.1 varnish',
+196 silly get     'cache-control': 'max-age=300',
+196 silly get     etag: '"E9VURFQDJSVN7SKYIIMYUOYYK"',
+196 silly get     age: '46',
+196 silly get     connection: 'keep-alive',
+196 silly get     'x-served-by': 'cache-lcy1130-LCY',
+196 silly get     'x-cache': 'HIT',
+196 silly get     'x-cache-hits': '600',
+196 silly get     'x-timer': 'S1468499161.764896,VS0,VE0',
+196 silly get     vary: 'Accept-Encoding' } ]
+197 verbose etag https://registry.npmjs.org/readable-stream from cache
+198 verbose get saving readable-stream to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\readable-stream\.cache.json
+199 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+200 silly cache afterAdd readable-stream@1.0.31
+201 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\readable-stream\1.0.31\package\package.json not in flight; writing
+202 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+203 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\readable-stream\1.0.31\package\package.json written
+204 http 304 https://registry.npmjs.org/mongodb-core
+205 verbose headers { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+205 verbose headers   via: '1.1 varnish',
+205 verbose headers   'cache-control': 'max-age=300',
+205 verbose headers   etag: '"48PXPZBMMOGI4A6CY11VPQAS6"',
+205 verbose headers   age: '240',
+205 verbose headers   connection: 'keep-alive',
+205 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+205 verbose headers   'x-cache': 'HIT',
+205 verbose headers   'x-cache-hits': '1',
+205 verbose headers   'x-timer': 'S1468499161.844876,VS0,VE0',
+205 verbose headers   vary: 'Accept-Encoding' }
+206 silly get cb [ 304,
+206 silly get   { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+206 silly get     via: '1.1 varnish',
+206 silly get     'cache-control': 'max-age=300',
+206 silly get     etag: '"48PXPZBMMOGI4A6CY11VPQAS6"',
+206 silly get     age: '240',
+206 silly get     connection: 'keep-alive',
+206 silly get     'x-served-by': 'cache-lcy1130-LCY',
+206 silly get     'x-cache': 'HIT',
+206 silly get     'x-cache-hits': '1',
+206 silly get     'x-timer': 'S1468499161.844876,VS0,VE0',
+206 silly get     vary: 'Accept-Encoding' } ]
+207 verbose etag https://registry.npmjs.org/mongodb-core from cache
+208 verbose get saving mongodb-core to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\mongodb-core\.cache.json
+209 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+210 http 304 https://registry.npmjs.org/es6-promise
+211 verbose headers { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+211 verbose headers   via: '1.1 varnish',
+211 verbose headers   'cache-control': 'max-age=300',
+211 verbose headers   etag: '"2NULQ1TLQHG12IFQTCP0OBQFC"',
+211 verbose headers   age: '130',
+211 verbose headers   connection: 'keep-alive',
+211 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+211 verbose headers   'x-cache': 'HIT',
+211 verbose headers   'x-cache-hits': '5',
+211 verbose headers   'x-timer': 'S1468499161.847382,VS0,VE0',
+211 verbose headers   vary: 'Accept-Encoding' }
+212 silly get cb [ 304,
+212 silly get   { date: 'Thu, 14 Jul 2016 12:26:01 GMT',
+212 silly get     via: '1.1 varnish',
+212 silly get     'cache-control': 'max-age=300',
+212 silly get     etag: '"2NULQ1TLQHG12IFQTCP0OBQFC"',
+212 silly get     age: '130',
+212 silly get     connection: 'keep-alive',
+212 silly get     'x-served-by': 'cache-lcy1130-LCY',
+212 silly get     'x-cache': 'HIT',
+212 silly get     'x-cache-hits': '5',
+212 silly get     'x-timer': 'S1468499161.847382,VS0,VE0',
+212 silly get     vary: 'Accept-Encoding' } ]
+213 verbose etag https://registry.npmjs.org/es6-promise from cache
+214 verbose get saving es6-promise to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\es6-promise\.cache.json
+215 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+216 silly cache afterAdd es6-promise@3.0.2
+217 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\es6-promise\3.0.2\package\package.json not in flight; writing
+218 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+219 silly cache afterAdd mongodb-core@2.0.4
+220 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\mongodb-core\2.0.4\package\package.json not in flight; writing
+221 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+222 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\es6-promise\3.0.2\package\package.json written
+223 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\mongodb-core\2.0.4\package\package.json written
+224 silly install resolved [ { name: 'readable-stream',
+224 silly install resolved     version: '1.0.31',
+224 silly install resolved     description: 'Streams2, a user-land copy of the stream library from Node.js v0.10.x',
+224 silly install resolved     main: 'readable.js',
+224 silly install resolved     dependencies:
+224 silly install resolved      { 'core-util-is': '~1.0.0',
+224 silly install resolved        isarray: '0.0.1',
+224 silly install resolved        string_decoder: '~0.10.x',
+224 silly install resolved        inherits: '~2.0.1' },
+224 silly install resolved     devDependencies: { tap: '~0.2.6' },
+224 silly install resolved     scripts: { test: 'tap test/simple/*.js' },
+224 silly install resolved     repository:
+224 silly install resolved      { type: 'git',
+224 silly install resolved        url: 'git://github.com/isaacs/readable-stream.git' },
+224 silly install resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+224 silly install resolved     browser: { util: false },
+224 silly install resolved     author:
+224 silly install resolved      { name: 'Isaac Z. Schlueter',
+224 silly install resolved        email: 'i@izs.me',
+224 silly install resolved        url: 'http://blog.izs.me/' },
+224 silly install resolved     license: 'MIT',
+224 silly install resolved     bugs: { url: 'https://github.com/isaacs/readable-stream/issues' },
+224 silly install resolved     homepage: 'https://github.com/isaacs/readable-stream',
+224 silly install resolved     _id: 'readable-stream@1.0.31',
+224 silly install resolved     _shasum: '8f2502e0bc9e3b0da1b94520aabb4e2603ecafae',
+224 silly install resolved     _from: 'readable-stream@1.0.31',
+224 silly install resolved     _npmVersion: '1.4.9',
+224 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+224 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+224 silly install resolved     dist:
+224 silly install resolved      { shasum: '8f2502e0bc9e3b0da1b94520aabb4e2603ecafae',
+224 silly install resolved        tarball: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz' },
+224 silly install resolved     directories: {},
+224 silly install resolved     _resolved: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz',
+224 silly install resolved     readme: 'ERROR: No README data found!' },
+224 silly install resolved   { name: 'es6-promise',
+224 silly install resolved     namespace: 'es6-promise',
+224 silly install resolved     version: '3.0.2',
+224 silly install resolved     description: 'A lightweight library that provides tools for organizing asynchronous code',
+224 silly install resolved     main: 'dist/es6-promise.js',
+224 silly install resolved     directories: { lib: 'lib' },
+224 silly install resolved     files: [ 'dist', 'lib', '!dist/test' ],
+224 silly install resolved     devDependencies:
+224 silly install resolved      { bower: '^1.3.9',
+224 silly install resolved        brfs: '0.0.8',
+224 silly install resolved        'broccoli-es3-safe-recast': '0.0.8',
+224 silly install resolved        'broccoli-es6-module-transpiler': '^0.5.0',
+224 silly install resolved        'broccoli-jshint': '^0.5.1',
+224 silly install resolved        'broccoli-merge-trees': '^0.1.4',
+224 silly install resolved        'broccoli-replace': '^0.2.0',
+224 silly install resolved        'broccoli-stew': '0.0.6',
+224 silly install resolved        'broccoli-uglify-js': '^0.1.3',
+224 silly install resolved        'broccoli-watchify': '^0.2.0',
+224 silly install resolved        'ember-cli': '0.2.3',
+224 silly install resolved        'ember-publisher': '0.0.7',
+224 silly install resolved        'git-repo-version': '0.0.2',
+224 silly install resolved        json3: '^3.3.2',
+224 silly install resolved        minimatch: '^2.0.1',
+224 silly install resolved        mocha: '^1.20.1',
+224 silly install resolved        'promises-aplus-tests-phantom': '^2.1.0-revise',
+224 silly install resolved        'release-it': '0.0.10' },
+224 silly install resolved     scripts:
+224 silly install resolved      { build: 'ember build',
+224 silly install resolved        start: 'ember s',
+224 silly install resolved        test: 'ember test',
+224 silly install resolved        'test:server': 'ember test --server',
+224 silly install resolved        'test:node': 'ember build && mocha ./dist/test/browserify',
+224 silly install resolved        lint: 'jshint lib',
+224 silly install resolved        prepublish: 'ember build --environment production',
+224 silly install resolved        'dry-run-release': 'ember build --environment production && release-it --dry-run --non-interactive' },
+224 silly install resolved     repository:
+224 silly install resolved      { type: 'git',
+224 silly install resolved        url: 'git://github.com/jakearchibald/ES6-Promises.git' },
+224 silly install resolved     bugs: { url: 'https://github.com/jakearchibald/ES6-Promises/issues' },
+224 silly install resolved     browser: { vertx: false },
+224 silly install resolved     keywords: [ 'promises', 'futures' ],
+224 silly install resolved     author:
+224 silly install resolved      { name: 'Yehuda Katz, Tom Dale, Stefan Penner and contributors',
+224 silly install resolved        url: 'Conversion to ES6 API by Jake Archibald' },
+224 silly install resolved     license: 'MIT',
+224 silly install resolved     spm: { main: 'dist/es6-promise.js' },
+224 silly install resolved     gitHead: '6c49ef79609737bac2b496d508806a3d5e37303e',
+224 silly install resolved     homepage: 'https://github.com/jakearchibald/ES6-Promises#readme',
+224 silly install resolved     _id: 'es6-promise@3.0.2',
+224 silly install resolved     _shasum: '010d5858423a5f118979665f46486a95c6ee2bb6',
+224 silly install resolved     _from: 'es6-promise@3.0.2',
+224 silly install resolved     _npmVersion: '2.13.4',
+224 silly install resolved     _nodeVersion: '2.2.1',
+224 silly install resolved     _npmUser: { name: 'stefanpenner', email: 'stefan.penner@gmail.com' },
+224 silly install resolved     maintainers: [ [Object], [Object] ],
+224 silly install resolved     dist:
+224 silly install resolved      { shasum: '010d5858423a5f118979665f46486a95c6ee2bb6',
+224 silly install resolved        tarball: 'https://registry.npmjs.org/es6-promise/-/es6-promise-3.0.2.tgz' },
+224 silly install resolved     _resolved: 'https://registry.npmjs.org/es6-promise/-/es6-promise-3.0.2.tgz',
+224 silly install resolved     readme: 'ERROR: No README data found!' },
+224 silly install resolved   { name: 'mongodb-core',
+224 silly install resolved     version: '2.0.4',
+224 silly install resolved     description: 'Core MongoDB driver functionality, no bells and whistles and meant for integration not end applications',
+224 silly install resolved     main: 'index.js',
+224 silly install resolved     scripts:
+224 silly install resolved      { test: 'node test/runner.js -t functional',
+224 silly install resolved        coverage: 'nyc node test/runner.js -t functional -l && node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls' },
+224 silly install resolved     repository:
+224 silly install resolved      { type: 'git',
+224 silly install resolved        url: 'git://github.com/christkv/mongodb-core.git' },
+224 silly install resolved     keywords: [ 'mongodb', 'core' ],
+224 silly install resolved     dependencies: { bson: '~0.5.1', require_optional: '~1.0.0' },
+224 silly install resolved     devDependencies:
+224 silly install resolved      { co: '4.5.4',
+224 silly install resolved        coveralls: '^2.11.6',
+224 silly install resolved        'es6-promise': '^3.0.2',
+224 silly install resolved        gleak: '0.5.0',
+224 silly install resolved        integra: '0.1.8',
+224 silly install resolved        jsdoc: '3.3.0-alpha8',
+224 silly install resolved        mkdirp: '0.5.0',
+224 silly install resolved        'mongodb-topology-manager': '1.0.x',
+224 silly install resolved        'mongodb-version-manager': '^1.x',
+224 silly install resolved        nyc: '^5.5.0',
+224 silly install resolved        optimist: 'latest',
+224 silly install resolved        rimraf: '2.2.6',
+224 silly install resolved        semver: '4.1.0' },
+224 silly install resolved     peerOptionalDependencies: { kerberos: '~0.0' },
+224 silly install resolved     author: { name: 'Christian Kvalheim' },
+224 silly install resolved     license: 'Apache-2.0',
+224 silly install resolved     bugs: { url: 'https://github.com/christkv/mongodb-core/issues' },
+224 silly install resolved     homepage: 'https://github.com/christkv/mongodb-core',
+224 silly install resolved     gitHead: '3e27b85d705274d292184d5df16713d27dc259eb',
+224 silly install resolved     _id: 'mongodb-core@2.0.4',
+224 silly install resolved     _shasum: 'a73a8413ac6ba0566663acc7d89e71db7f24dd2c',
+224 silly install resolved     _from: 'mongodb-core@2.0.4',
+224 silly install resolved     _npmVersion: '2.15.1',
+224 silly install resolved     _nodeVersion: '4.4.4',
+224 silly install resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+224 silly install resolved     maintainers: [ [Object] ],
+224 silly install resolved     dist:
+224 silly install resolved      { shasum: 'a73a8413ac6ba0566663acc7d89e71db7f24dd2c',
+224 silly install resolved        tarball: 'https://registry.npmjs.org/mongodb-core/-/mongodb-core-2.0.4.tgz' },
+224 silly install resolved     _npmOperationalInternal:
+224 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+224 silly install resolved        tmp: 'tmp/mongodb-core-2.0.4.tgz_1468229176171_0.39204678614623845' },
+224 silly install resolved     directories: {},
+224 silly install resolved     _resolved: 'https://registry.npmjs.org/mongodb-core/-/mongodb-core-2.0.4.tgz',
+224 silly install resolved     readme: 'ERROR: No README data found!' } ]
+225 info install readable-stream@1.0.31 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+226 info install es6-promise@3.0.2 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+227 info install mongodb-core@2.0.4 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+228 info installOne readable-stream@1.0.31
+229 verbose installOne of readable-stream to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb not in flight; installing
+230 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+231 info installOne es6-promise@3.0.2
+232 verbose installOne of es6-promise to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb not in flight; installing
+233 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+234 info installOne mongodb-core@2.0.4
+235 verbose installOne of mongodb-core to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb not in flight; installing
+236 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+237 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\readable-stream-4ef98f142add6da1.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+238 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\es6-promise-c506b7b0a4ae98fd.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+239 silly install write writing readable-stream 1.0.31 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+240 silly install write writing es6-promise 3.0.2 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+241 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\mongodb-core-60103fe3c9a0c155.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+242 silly install write writing mongodb-core 2.0.4 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+243 verbose unbuild node_modules\mongodb\node_modules\readable-stream
+244 verbose unbuild node_modules\mongodb\node_modules\es6-promise
+245 verbose unbuild node_modules\mongodb\node_modules\mongodb-core
+246 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+247 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+248 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+249 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+250 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\readable-stream\1.0.31\package.tgz
+251 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+252 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream is being purged
+253 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+254 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\es6-promise\3.0.2\package.tgz
+255 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+256 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise is being purged
+257 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+258 silly gunzTarPerm modes [ '777', '666' ]
+259 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+260 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+261 silly gunzTarPerm modes [ '777', '666' ]
+262 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\mongodb-core\2.0.4\package.tgz
+263 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+264 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core is being purged
+265 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+266 silly gunzTarPerm modes [ '777', '666' ]
+267 silly gunzTarPerm extractEntry package.json
+268 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+269 silly gunzTarPerm extractEntry package.json
+270 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+271 silly gunzTarPerm extractEntry .npmignore
+272 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+273 silly gunzTarPerm extractEntry README.md
+274 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+275 silly gunzTarPerm extractEntry package.json
+276 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+277 silly gunzTarPerm extractEntry README.md
+278 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+279 silly gunzTarPerm extractEntry LICENSE
+280 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+281 silly gunzTarPerm extractEntry README.md
+282 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+283 silly gunzTarPerm extractEntry LICENSE
+284 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+285 silly gunzTarPerm extractEntry LICENSE
+286 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+287 silly gunzTarPerm extractEntry transform.js
+288 silly gunzTarPerm modified mode [ 'transform.js', 420, 438 ]
+289 silly gunzTarPerm extractEntry CHANGELOG.md
+290 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+291 silly gunzTarPerm extractEntry test.js
+292 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+293 silly gunzTarPerm extractEntry duplex.js
+294 silly gunzTarPerm modified mode [ 'duplex.js', 420, 438 ]
+295 silly gunzTarPerm extractEntry readable.js
+296 silly gunzTarPerm modified mode [ 'readable.js', 436, 438 ]
+297 silly gunzTarPerm extractEntry dist/es6-promise.js
+298 silly gunzTarPerm modified mode [ 'dist/es6-promise.js', 420, 438 ]
+299 silly gunzTarPerm extractEntry dist/es6-promise.min.js
+300 silly gunzTarPerm modified mode [ 'dist/es6-promise.min.js', 420, 438 ]
+301 silly gunzTarPerm extractEntry index.js
+302 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+303 silly gunzTarPerm extractEntry HISTORY.md
+304 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 438 ]
+305 silly gunzTarPerm extractEntry passthrough.js
+306 silly gunzTarPerm modified mode [ 'passthrough.js', 420, 438 ]
+307 silly gunzTarPerm extractEntry writable.js
+308 silly gunzTarPerm modified mode [ 'writable.js', 420, 438 ]
+309 silly gunzTarPerm extractEntry lib/es6-promise.umd.js
+310 silly gunzTarPerm modified mode [ 'lib/es6-promise.umd.js', 420, 438 ]
+311 silly gunzTarPerm extractEntry lib/es6-promise/-internal.js
+312 silly gunzTarPerm modified mode [ 'lib/es6-promise/-internal.js', 420, 438 ]
+313 silly gunzTarPerm extractEntry TESTING.md
+314 silly gunzTarPerm modified mode [ 'TESTING.md', 420, 438 ]
+315 silly gunzTarPerm extractEntry conf.json
+316 silly gunzTarPerm modified mode [ 'conf.json', 420, 438 ]
+317 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+318 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 436, 438 ]
+319 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+320 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 436, 438 ]
+321 silly gunzTarPerm extractEntry lib/es6-promise/asap.js
+322 silly gunzTarPerm modified mode [ 'lib/es6-promise/asap.js', 420, 438 ]
+323 silly gunzTarPerm extractEntry lib/es6-promise/enumerator.js
+324 silly gunzTarPerm modified mode [ 'lib/es6-promise/enumerator.js', 420, 438 ]
+325 silly gunzTarPerm extractEntry lib/es6-promise/polyfill.js
+326 silly gunzTarPerm modified mode [ 'lib/es6-promise/polyfill.js', 420, 438 ]
+327 silly gunzTarPerm extractEntry lib/_stream_readable.js
+328 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 436, 438 ]
+329 silly gunzTarPerm extractEntry lib/es6-promise/promise.js
+330 silly gunzTarPerm modified mode [ 'lib/es6-promise/promise.js', 420, 438 ]
+331 silly gunzTarPerm extractEntry .coveralls.yml
+332 silly gunzTarPerm modified mode [ '.coveralls.yml', 420, 438 ]
+333 silly gunzTarPerm extractEntry lib/cursor.js
+334 silly gunzTarPerm modified mode [ 'lib/cursor.js', 420, 438 ]
+335 silly gunzTarPerm extractEntry lib/_stream_transform.js
+336 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 436, 438 ]
+337 silly gunzTarPerm extractEntry lib/_stream_writable.js
+338 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 436, 438 ]
+339 silly gunzTarPerm extractEntry lib/error.js
+340 silly gunzTarPerm modified mode [ 'lib/error.js', 420, 438 ]
+341 silly gunzTarPerm extractEntry lib/auth/gssapi.js
+342 silly gunzTarPerm modified mode [ 'lib/auth/gssapi.js', 420, 438 ]
+343 silly gunzTarPerm extractEntry lib/auth/mongocr.js
+344 silly gunzTarPerm modified mode [ 'lib/auth/mongocr.js', 420, 438 ]
+345 silly gunzTarPerm extractEntry lib/es6-promise/utils.js
+346 silly gunzTarPerm modified mode [ 'lib/es6-promise/utils.js', 420, 438 ]
+347 silly gunzTarPerm extractEntry lib/es6-promise/promise/all.js
+348 silly gunzTarPerm modified mode [ 'lib/es6-promise/promise/all.js', 420, 438 ]
+349 silly gunzTarPerm extractEntry lib/es6-promise/promise/race.js
+350 silly gunzTarPerm modified mode [ 'lib/es6-promise/promise/race.js', 420, 438 ]
+351 silly gunzTarPerm extractEntry lib/auth/plain.js
+352 silly gunzTarPerm modified mode [ 'lib/auth/plain.js', 420, 438 ]
+353 silly gunzTarPerm extractEntry lib/es6-promise/promise/reject.js
+354 silly gunzTarPerm modified mode [ 'lib/es6-promise/promise/reject.js', 420, 438 ]
+355 silly gunzTarPerm extractEntry lib/auth/scram.js
+356 silly gunzTarPerm modified mode [ 'lib/auth/scram.js', 420, 438 ]
+357 silly gunzTarPerm extractEntry lib/auth/sspi.js
+358 silly gunzTarPerm modified mode [ 'lib/auth/sspi.js', 420, 438 ]
+359 silly gunzTarPerm extractEntry lib/es6-promise/promise/resolve.js
+360 silly gunzTarPerm modified mode [ 'lib/es6-promise/promise/resolve.js', 420, 438 ]
+361 silly gunzTarPerm extractEntry lib/auth/x509.js
+362 silly gunzTarPerm modified mode [ 'lib/auth/x509.js', 420, 438 ]
+363 silly gunzTarPerm extractEntry lib/connection/command_result.js
+364 silly gunzTarPerm modified mode [ 'lib/connection/command_result.js', 420, 438 ]
+365 silly gunzTarPerm extractEntry lib/connection/commands.js
+366 silly gunzTarPerm modified mode [ 'lib/connection/commands.js', 420, 438 ]
+367 silly gunzTarPerm extractEntry lib/connection/connection.js
+368 silly gunzTarPerm modified mode [ 'lib/connection/connection.js', 420, 438 ]
+369 silly gunzTarPerm extractEntry lib/connection/logger.js
+370 silly gunzTarPerm modified mode [ 'lib/connection/logger.js', 420, 438 ]
+371 silly gunzTarPerm extractEntry lib/connection/pool.js
+372 silly gunzTarPerm modified mode [ 'lib/connection/pool.js', 420, 438 ]
+373 silly gunzTarPerm extractEntry lib/connection/utils.js
+374 silly gunzTarPerm modified mode [ 'lib/connection/utils.js', 420, 438 ]
+375 silly gunzTarPerm extractEntry lib/tools/smoke_plugin.js
+376 silly gunzTarPerm modified mode [ 'lib/tools/smoke_plugin.js', 420, 438 ]
+377 silly gunzTarPerm extractEntry lib/topologies/mongos.js
+378 silly gunzTarPerm modified mode [ 'lib/topologies/mongos.js', 420, 438 ]
+379 silly gunzTarPerm extractEntry lib/topologies/read_preference.js
+380 silly gunzTarPerm modified mode [ 'lib/topologies/read_preference.js', 420, 438 ]
+381 silly gunzTarPerm extractEntry lib/topologies/replset.js
+382 silly gunzTarPerm modified mode [ 'lib/topologies/replset.js', 420, 438 ]
+383 silly gunzTarPerm extractEntry lib/topologies/replset_state.js
+384 silly gunzTarPerm modified mode [ 'lib/topologies/replset_state.js', 420, 438 ]
+385 silly gunzTarPerm extractEntry lib/topologies/server.js
+386 silly gunzTarPerm modified mode [ 'lib/topologies/server.js', 420, 438 ]
+387 silly gunzTarPerm extractEntry lib/topologies/shared.js
+388 silly gunzTarPerm modified mode [ 'lib/topologies/shared.js', 420, 438 ]
+389 silly gunzTarPerm extractEntry lib/wireprotocol/2_4_support.js
+390 silly gunzTarPerm modified mode [ 'lib/wireprotocol/2_4_support.js', 420, 438 ]
+391 silly gunzTarPerm extractEntry lib/wireprotocol/2_6_support.js
+392 silly gunzTarPerm modified mode [ 'lib/wireprotocol/2_6_support.js', 420, 438 ]
+393 silly gunzTarPerm extractEntry lib/wireprotocol/3_2_support.js
+394 silly gunzTarPerm modified mode [ 'lib/wireprotocol/3_2_support.js', 420, 438 ]
+395 silly gunzTarPerm extractEntry lib/wireprotocol/commands.js
+396 silly gunzTarPerm modified mode [ 'lib/wireprotocol/commands.js', 420, 438 ]
+397 silly gunzTarPerm extractEntry lib/wireprotocol/shared.js
+398 silly gunzTarPerm modified mode [ 'lib/wireprotocol/shared.js', 420, 438 ]
+399 silly gunzTarPerm extractEntry Makefile
+400 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+401 silly gunzTarPerm extractEntry simple_2_document_limit_toArray.dat
+402 silly gunzTarPerm modified mode [ 'simple_2_document_limit_toArray.dat', 420, 438 ]
+403 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\package.json
+404 info preinstall readable-stream@1.0.31
+405 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\package.json
+406 silly prepareForInstallMany adding core-util-is@~1.0.0 from readable-stream dependencies
+407 silly prepareForInstallMany adding isarray@0.0.1 from readable-stream dependencies
+408 silly prepareForInstallMany adding string_decoder@~0.10.x from readable-stream dependencies
+409 silly prepareForInstallMany adding inherits@~2.0.1 from readable-stream dependencies
+410 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\package.json
+411 silly cache add args [ 'core-util-is@~1.0.0', null ]
+412 verbose cache add spec core-util-is@~1.0.0
+413 silly cache add args [ 'isarray@0.0.1', null ]
+414 verbose cache add spec isarray@0.0.1
+415 silly cache add parsed spec Result {
+415 silly cache add   raw: 'core-util-is@~1.0.0',
+415 silly cache add   scope: null,
+415 silly cache add   name: 'core-util-is',
+415 silly cache add   rawSpec: '~1.0.0',
+415 silly cache add   spec: '>=1.0.0 <1.1.0',
+415 silly cache add   type: 'range' }
+416 silly addNamed core-util-is@>=1.0.0 <1.1.0
+417 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for core-util-is
+418 silly addNameRange { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: false }
+419 silly mapToRegistry name core-util-is
+420 silly mapToRegistry using default registry
+421 silly mapToRegistry registry https://registry.npmjs.org/
+422 silly mapToRegistry data Result {
+422 silly mapToRegistry   raw: 'core-util-is',
+422 silly mapToRegistry   scope: null,
+422 silly mapToRegistry   name: 'core-util-is',
+422 silly mapToRegistry   rawSpec: '',
+422 silly mapToRegistry   spec: 'latest',
+422 silly mapToRegistry   type: 'tag' }
+423 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+424 verbose addNameRange registry:https://registry.npmjs.org/core-util-is not in flight; fetching
+425 silly cache add parsed spec Result {
+425 silly cache add   raw: 'isarray@0.0.1',
+425 silly cache add   scope: null,
+425 silly cache add   name: 'isarray',
+425 silly cache add   rawSpec: '0.0.1',
+425 silly cache add   spec: '0.0.1',
+425 silly cache add   type: 'version' }
+426 silly addNamed isarray@0.0.1
+427 verbose addNamed "0.0.1" is a plain semver version for isarray
+428 silly mapToRegistry name isarray
+429 silly mapToRegistry using default registry
+430 silly mapToRegistry registry https://registry.npmjs.org/
+431 silly mapToRegistry data Result {
+431 silly mapToRegistry   raw: 'isarray',
+431 silly mapToRegistry   scope: null,
+431 silly mapToRegistry   name: 'isarray',
+431 silly mapToRegistry   rawSpec: '',
+431 silly mapToRegistry   spec: 'latest',
+431 silly mapToRegistry   type: 'tag' }
+432 silly mapToRegistry uri https://registry.npmjs.org/isarray
+433 verbose addNameVersion registry:https://registry.npmjs.org/isarray not in flight; fetching
+434 silly cache add args [ 'string_decoder@~0.10.x', null ]
+435 verbose cache add spec string_decoder@~0.10.x
+436 silly cache add parsed spec Result {
+436 silly cache add   raw: 'string_decoder@~0.10.x',
+436 silly cache add   scope: null,
+436 silly cache add   name: 'string_decoder',
+436 silly cache add   rawSpec: '~0.10.x',
+436 silly cache add   spec: '>=0.10.0 <0.11.0',
+436 silly cache add   type: 'range' }
+437 silly addNamed string_decoder@>=0.10.0 <0.11.0
+438 verbose addNamed ">=0.10.0 <0.11.0" is a valid semver range for string_decoder
+439 silly addNameRange { name: 'string_decoder',
+439 silly addNameRange   range: '>=0.10.0 <0.11.0',
+439 silly addNameRange   hasData: false }
+440 silly mapToRegistry name string_decoder
+441 silly mapToRegistry using default registry
+442 silly mapToRegistry registry https://registry.npmjs.org/
+443 silly mapToRegistry data Result {
+443 silly mapToRegistry   raw: 'string_decoder',
+443 silly mapToRegistry   scope: null,
+443 silly mapToRegistry   name: 'string_decoder',
+443 silly mapToRegistry   rawSpec: '',
+443 silly mapToRegistry   spec: 'latest',
+443 silly mapToRegistry   type: 'tag' }
+444 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+445 verbose addNameRange registry:https://registry.npmjs.org/string_decoder not in flight; fetching
+446 silly cache add args [ 'inherits@~2.0.1', null ]
+447 verbose cache add spec inherits@~2.0.1
+448 silly cache add parsed spec Result {
+448 silly cache add   raw: 'inherits@~2.0.1',
+448 silly cache add   scope: null,
+448 silly cache add   name: 'inherits',
+448 silly cache add   rawSpec: '~2.0.1',
+448 silly cache add   spec: '>=2.0.1 <2.1.0',
+448 silly cache add   type: 'range' }
+449 silly addNamed inherits@>=2.0.1 <2.1.0
+450 verbose addNamed ">=2.0.1 <2.1.0" is a valid semver range for inherits
+451 silly addNameRange { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: false }
+452 silly mapToRegistry name inherits
+453 silly mapToRegistry using default registry
+454 silly mapToRegistry registry https://registry.npmjs.org/
+455 silly mapToRegistry data Result {
+455 silly mapToRegistry   raw: 'inherits',
+455 silly mapToRegistry   scope: null,
+455 silly mapToRegistry   name: 'inherits',
+455 silly mapToRegistry   rawSpec: '',
+455 silly mapToRegistry   spec: 'latest',
+455 silly mapToRegistry   type: 'tag' }
+456 silly mapToRegistry uri https://registry.npmjs.org/inherits
+457 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+458 verbose request uri https://registry.npmjs.org/core-util-is
+459 verbose request no auth needed
+460 info attempt registry request try #1 at 14:26:00
+461 verbose etag "75RK9UUWAHLYO40UZKLLOJ8YF"
+462 http request GET https://registry.npmjs.org/core-util-is
+463 verbose request uri https://registry.npmjs.org/isarray
+464 verbose request no auth needed
+465 info attempt registry request try #1 at 14:26:00
+466 verbose etag "9BAUPW5RTV3W0838KA6Y08NTG"
+467 http request GET https://registry.npmjs.org/isarray
+468 verbose request uri https://registry.npmjs.org/string_decoder
+469 verbose request no auth needed
+470 info attempt registry request try #1 at 14:26:00
+471 verbose etag "3SLQP4XEWUIBONOV855WOPR0B"
+472 http request GET https://registry.npmjs.org/string_decoder
+473 verbose request uri https://registry.npmjs.org/inherits
+474 verbose request no auth needed
+475 info attempt registry request try #1 at 14:26:00
+476 verbose etag "DW5AARMI0EU78WM0DVWHCUX08"
+477 http request GET https://registry.npmjs.org/inherits
+478 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise\package.json
+479 info preinstall es6-promise@3.0.2
+480 http 304 https://registry.npmjs.org/core-util-is
+481 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+481 verbose headers   via: '1.1 varnish',
+481 verbose headers   'cache-control': 'max-age=300',
+481 verbose headers   etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+481 verbose headers   age: '237',
+481 verbose headers   connection: 'keep-alive',
+481 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+481 verbose headers   'x-cache': 'HIT',
+481 verbose headers   'x-cache-hits': '42',
+481 verbose headers   'x-timer': 'S1468499162.111806,VS0,VE0',
+481 verbose headers   vary: 'Accept-Encoding' }
+482 silly get cb [ 304,
+482 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+482 silly get     via: '1.1 varnish',
+482 silly get     'cache-control': 'max-age=300',
+482 silly get     etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+482 silly get     age: '237',
+482 silly get     connection: 'keep-alive',
+482 silly get     'x-served-by': 'cache-lcy1130-LCY',
+482 silly get     'x-cache': 'HIT',
+482 silly get     'x-cache-hits': '42',
+482 silly get     'x-timer': 'S1468499162.111806,VS0,VE0',
+482 silly get     vary: 'Accept-Encoding' } ]
+483 verbose etag https://registry.npmjs.org/core-util-is from cache
+484 verbose get saving core-util-is to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\core-util-is\.cache.json
+485 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+486 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise\package.json
+487 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise\package.json
+488 silly install resolved []
+489 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+490 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+491 http 304 https://registry.npmjs.org/string_decoder
+492 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+492 verbose headers   via: '1.1 varnish',
+492 verbose headers   'cache-control': 'max-age=300',
+492 verbose headers   etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+492 verbose headers   age: '227',
+492 verbose headers   connection: 'keep-alive',
+492 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+492 verbose headers   'x-cache': 'HIT',
+492 verbose headers   'x-cache-hits': '42',
+492 verbose headers   'x-timer': 'S1468499162.122571,VS0,VE0',
+492 verbose headers   vary: 'Accept-Encoding' }
+493 silly get cb [ 304,
+493 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+493 silly get     via: '1.1 varnish',
+493 silly get     'cache-control': 'max-age=300',
+493 silly get     etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+493 silly get     age: '227',
+493 silly get     connection: 'keep-alive',
+493 silly get     'x-served-by': 'cache-lcy1130-LCY',
+493 silly get     'x-cache': 'HIT',
+493 silly get     'x-cache-hits': '42',
+493 silly get     'x-timer': 'S1468499162.122571,VS0,VE0',
+493 silly get     vary: 'Accept-Encoding' } ]
+494 verbose etag https://registry.npmjs.org/string_decoder from cache
+495 verbose get saving string_decoder to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\string_decoder\.cache.json
+496 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+497 silly addNameRange number 2 { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: true }
+498 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+499 silly addNamed core-util-is@1.0.2
+500 verbose addNamed "1.0.2" is a plain semver version for core-util-is
+501 http 304 https://registry.npmjs.org/isarray
+502 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+502 verbose headers   via: '1.1 varnish',
+502 verbose headers   'cache-control': 'max-age=300',
+502 verbose headers   etag: '"9BAUPW5RTV3W0838KA6Y08NTG"',
+502 verbose headers   age: '113',
+502 verbose headers   connection: 'keep-alive',
+502 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+502 verbose headers   'x-cache': 'HIT',
+502 verbose headers   'x-cache-hits': '38',
+502 verbose headers   'x-timer': 'S1468499162.121700,VS0,VE0',
+502 verbose headers   vary: 'Accept-Encoding' }
+503 silly get cb [ 304,
+503 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+503 silly get     via: '1.1 varnish',
+503 silly get     'cache-control': 'max-age=300',
+503 silly get     etag: '"9BAUPW5RTV3W0838KA6Y08NTG"',
+503 silly get     age: '113',
+503 silly get     connection: 'keep-alive',
+503 silly get     'x-served-by': 'cache-lcy1130-LCY',
+503 silly get     'x-cache': 'HIT',
+503 silly get     'x-cache-hits': '38',
+503 silly get     'x-timer': 'S1468499162.121700,VS0,VE0',
+503 silly get     vary: 'Accept-Encoding' } ]
+504 verbose etag https://registry.npmjs.org/isarray from cache
+505 verbose get saving isarray to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\isarray\.cache.json
+506 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+507 info linkStuff es6-promise@3.0.2
+508 silly linkStuff es6-promise@3.0.2 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules as its parent node_modules
+509 silly cache afterAdd core-util-is@1.0.2
+510 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\core-util-is\1.0.2\package\package.json not in flight; writing
+511 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+512 verbose linkBins es6-promise@3.0.2
+513 verbose linkMans es6-promise@3.0.2
+514 verbose rebuildBundles es6-promise@3.0.2
+515 info install es6-promise@3.0.2
+516 silly addNameRange number 2 { name: 'string_decoder',
+516 silly addNameRange   range: '>=0.10.0 <0.11.0',
+516 silly addNameRange   hasData: true }
+517 silly addNameRange versions [ 'string_decoder',
+517 silly addNameRange   [ '0.0.0',
+517 silly addNameRange     '0.0.1',
+517 silly addNameRange     '0.10.24',
+517 silly addNameRange     '0.11.10',
+517 silly addNameRange     '0.10.25',
+517 silly addNameRange     '0.11.10-1',
+517 silly addNameRange     '0.10.25-1',
+517 silly addNameRange     '0.10.31' ] ]
+518 silly addNamed string_decoder@0.10.31
+519 verbose addNamed "0.10.31" is a plain semver version for string_decoder
+520 info postinstall es6-promise@3.0.2
+521 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\core-util-is\1.0.2\package\package.json written
+522 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\es6-promise-c506b7b0a4ae98fd.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\es6-promise
+523 silly cache afterAdd isarray@0.0.1
+524 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\isarray\0.0.1\package\package.json not in flight; writing
+525 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+526 silly cache afterAdd string_decoder@0.10.31
+527 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json not in flight; writing
+528 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+529 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\isarray\0.0.1\package\package.json written
+530 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json written
+531 http 304 https://registry.npmjs.org/inherits
+532 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+532 verbose headers   via: '1.1 varnish',
+532 verbose headers   'cache-control': 'max-age=300',
+532 verbose headers   etag: '"DW5AARMI0EU78WM0DVWHCUX08"',
+532 verbose headers   age: '257',
+532 verbose headers   connection: 'keep-alive',
+532 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+532 verbose headers   'x-cache': 'HIT',
+532 verbose headers   'x-cache-hits': '62',
+532 verbose headers   'x-timer': 'S1468499162.179366,VS0,VE0',
+532 verbose headers   vary: 'Accept-Encoding' }
+533 silly get cb [ 304,
+533 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+533 silly get     via: '1.1 varnish',
+533 silly get     'cache-control': 'max-age=300',
+533 silly get     etag: '"DW5AARMI0EU78WM0DVWHCUX08"',
+533 silly get     age: '257',
+533 silly get     connection: 'keep-alive',
+533 silly get     'x-served-by': 'cache-lcy1133-LCY',
+533 silly get     'x-cache': 'HIT',
+533 silly get     'x-cache-hits': '62',
+533 silly get     'x-timer': 'S1468499162.179366,VS0,VE0',
+533 silly get     vary: 'Accept-Encoding' } ]
+534 verbose etag https://registry.npmjs.org/inherits from cache
+535 verbose get saving inherits to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\inherits\.cache.json
+536 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+537 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: true }
+538 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+539 silly addNamed inherits@2.0.1
+540 verbose addNamed "2.0.1" is a plain semver version for inherits
+541 silly cache afterAdd inherits@2.0.1
+542 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\inherits\2.0.1\package\package.json not in flight; writing
+543 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+544 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\inherits\2.0.1\package\package.json written
+545 silly install resolved [ { name: 'core-util-is',
+545 silly install resolved     version: '1.0.2',
+545 silly install resolved     description: 'The `util.is*` functions introduced in Node v0.12.',
+545 silly install resolved     main: 'lib/util.js',
+545 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/core-util-is.git' },
+545 silly install resolved     keywords:
+545 silly install resolved      [ 'util',
+545 silly install resolved        'isBuffer',
+545 silly install resolved        'isArray',
+545 silly install resolved        'isNumber',
+545 silly install resolved        'isString',
+545 silly install resolved        'isRegExp',
+545 silly install resolved        'isThis',
+545 silly install resolved        'isThat',
+545 silly install resolved        'polyfill' ],
+545 silly install resolved     author:
+545 silly install resolved      { name: 'Isaac Z. Schlueter',
+545 silly install resolved        email: 'i@izs.me',
+545 silly install resolved        url: 'http://blog.izs.me/' },
+545 silly install resolved     license: 'MIT',
+545 silly install resolved     bugs: { url: 'https://github.com/isaacs/core-util-is/issues' },
+545 silly install resolved     scripts: { test: 'tap test.js' },
+545 silly install resolved     devDependencies: { tap: '^2.3.0' },
+545 silly install resolved     gitHead: 'a177da234df5638b363ddc15fa324619a38577c8',
+545 silly install resolved     homepage: 'https://github.com/isaacs/core-util-is#readme',
+545 silly install resolved     _id: 'core-util-is@1.0.2',
+545 silly install resolved     _shasum: 'b5fd54220aa2bc5ab57aab7140c940754503c1a7',
+545 silly install resolved     _from: 'core-util-is@>=1.0.0 <1.1.0',
+545 silly install resolved     _npmVersion: '3.3.2',
+545 silly install resolved     _nodeVersion: '4.0.0',
+545 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+545 silly install resolved     dist:
+545 silly install resolved      { shasum: 'b5fd54220aa2bc5ab57aab7140c940754503c1a7',
+545 silly install resolved        tarball: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz' },
+545 silly install resolved     maintainers: [ [Object] ],
+545 silly install resolved     directories: {},
+545 silly install resolved     _resolved: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz',
+545 silly install resolved     readme: 'ERROR: No README data found!' },
+545 silly install resolved   { name: 'isarray',
+545 silly install resolved     description: 'Array#isArray for older browsers',
+545 silly install resolved     version: '0.0.1',
+545 silly install resolved     repository:
+545 silly install resolved      { type: 'git',
+545 silly install resolved        url: 'git://github.com/juliangruber/isarray.git' },
+545 silly install resolved     homepage: 'https://github.com/juliangruber/isarray',
+545 silly install resolved     main: 'index.js',
+545 silly install resolved     scripts: { test: 'tap test/*.js' },
+545 silly install resolved     dependencies: {},
+545 silly install resolved     devDependencies: { tap: '*' },
+545 silly install resolved     keywords: [ 'browser', 'isarray', 'array' ],
+545 silly install resolved     author:
+545 silly install resolved      { name: 'Julian Gruber',
+545 silly install resolved        email: 'mail@juliangruber.com',
+545 silly install resolved        url: 'http://juliangruber.com' },
+545 silly install resolved     license: 'MIT',
+545 silly install resolved     _id: 'isarray@0.0.1',
+545 silly install resolved     dist:
+545 silly install resolved      { shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+545 silly install resolved        tarball: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz' },
+545 silly install resolved     _from: 'isarray@0.0.1',
+545 silly install resolved     _npmVersion: '1.2.18',
+545 silly install resolved     _npmUser: { name: 'juliangruber', email: 'julian@juliangruber.com' },
+545 silly install resolved     maintainers: [ [Object] ],
+545 silly install resolved     directories: {},
+545 silly install resolved     _shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+545 silly install resolved     _resolved: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz',
+545 silly install resolved     bugs: { url: 'https://github.com/juliangruber/isarray/issues' },
+545 silly install resolved     readme: 'ERROR: No README data found!' },
+545 silly install resolved   { name: 'string_decoder',
+545 silly install resolved     version: '0.10.31',
+545 silly install resolved     description: 'The string_decoder module from Node core',
+545 silly install resolved     main: 'index.js',
+545 silly install resolved     dependencies: {},
+545 silly install resolved     devDependencies: { tap: '~0.4.8' },
+545 silly install resolved     scripts: { test: 'tap test/simple/*.js' },
+545 silly install resolved     repository:
+545 silly install resolved      { type: 'git',
+545 silly install resolved        url: 'git://github.com/rvagg/string_decoder.git' },
+545 silly install resolved     homepage: 'https://github.com/rvagg/string_decoder',
+545 silly install resolved     keywords: [ 'string', 'decoder', 'browser', 'browserify' ],
+545 silly install resolved     license: 'MIT',
+545 silly install resolved     gitHead: 'd46d4fd87cf1d06e031c23f1ba170ca7d4ade9a0',
+545 silly install resolved     bugs: { url: 'https://github.com/rvagg/string_decoder/issues' },
+545 silly install resolved     _id: 'string_decoder@0.10.31',
+545 silly install resolved     _shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+545 silly install resolved     _from: 'string_decoder@>=0.10.0 <0.11.0',
+545 silly install resolved     _npmVersion: '1.4.23',
+545 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+545 silly install resolved     maintainers: [ [Object], [Object] ],
+545 silly install resolved     dist:
+545 silly install resolved      { shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+545 silly install resolved        tarball: 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz' },
+545 silly install resolved     directories: {},
+545 silly install resolved     _resolved: 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz',
+545 silly install resolved     readme: 'ERROR: No README data found!' },
+545 silly install resolved   { name: 'inherits',
+545 silly install resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+545 silly install resolved     version: '2.0.1',
+545 silly install resolved     keywords:
+545 silly install resolved      [ 'inheritance',
+545 silly install resolved        'class',
+545 silly install resolved        'klass',
+545 silly install resolved        'oop',
+545 silly install resolved        'object-oriented',
+545 silly install resolved        'inherits',
+545 silly install resolved        'browser',
+545 silly install resolved        'browserify' ],
+545 silly install resolved     main: './inherits.js',
+545 silly install resolved     browser: './inherits_browser.js',
+545 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+545 silly install resolved     license: 'ISC',
+545 silly install resolved     scripts: { test: 'node test' },
+545 silly install resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+545 silly install resolved     _id: 'inherits@2.0.1',
+545 silly install resolved     dist:
+545 silly install resolved      { shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+545 silly install resolved        tarball: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz' },
+545 silly install resolved     _from: 'inherits@>=2.0.1 <2.1.0',
+545 silly install resolved     _npmVersion: '1.3.8',
+545 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+545 silly install resolved     maintainers: [ [Object] ],
+545 silly install resolved     directories: {},
+545 silly install resolved     _shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+545 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
+545 silly install resolved     readme: 'ERROR: No README data found!',
+545 silly install resolved     homepage: 'https://github.com/isaacs/inherits#readme' } ]
+546 info install core-util-is@1.0.2 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+547 info install isarray@0.0.1 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+548 info install string_decoder@0.10.31 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+549 info install inherits@2.0.1 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+550 info installOne core-util-is@1.0.2
+551 verbose installOne of core-util-is to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream not in flight; installing
+552 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+553 info installOne isarray@0.0.1
+554 verbose installOne of isarray to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream not in flight; installing
+555 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+556 info installOne string_decoder@0.10.31
+557 verbose installOne of string_decoder to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream not in flight; installing
+558 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+559 info installOne inherits@2.0.1
+560 verbose installOne of inherits to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream not in flight; installing
+561 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+562 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\isarray-589c9c7e6fbb1ca2.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+563 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\core-util-is-d3bcedbb553585db.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+564 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\string-decoder-73c567ef53a39aed.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+565 silly install write writing isarray 0.0.1 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+566 silly install write writing core-util-is 1.0.2 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+567 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\inherits-3b34a871361abf81.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+568 silly install write writing string_decoder 0.10.31 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+569 silly install write writing inherits 2.0.1 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+570 verbose unbuild node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+571 verbose unbuild node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+572 verbose unbuild node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+573 verbose unbuild node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+574 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+575 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+576 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+577 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+578 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+579 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+580 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\isarray\0.0.1\package.tgz
+581 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+582 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray is being purged
+583 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+584 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\core-util-is\1.0.2\package.tgz
+585 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+586 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is is being purged
+587 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+588 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\string_decoder\0.10.31\package.tgz
+589 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+590 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder is being purged
+591 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+592 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+593 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+594 silly gunzTarPerm modes [ '777', '666' ]
+595 silly gunzTarPerm modes [ '777', '666' ]
+596 silly gunzTarPerm modes [ '777', '666' ]
+597 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\inherits\2.0.1\package.tgz
+598 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+599 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits is being purged
+600 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+601 silly gunzTarPerm modes [ '777', '666' ]
+602 silly gunzTarPerm extractEntry package.json
+603 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+604 silly gunzTarPerm extractEntry package.json
+605 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+606 silly gunzTarPerm extractEntry package.json
+607 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+608 silly gunzTarPerm extractEntry package.json
+609 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+610 silly gunzTarPerm extractEntry README.md
+611 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+612 silly gunzTarPerm extractEntry index.js
+613 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+614 silly gunzTarPerm extractEntry README.md
+615 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+616 silly gunzTarPerm extractEntry LICENSE
+617 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+618 silly gunzTarPerm extractEntry .npmignore
+619 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+620 silly gunzTarPerm extractEntry README.md
+621 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+622 silly gunzTarPerm extractEntry README.md
+623 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+624 silly gunzTarPerm extractEntry LICENSE
+625 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+626 silly gunzTarPerm extractEntry build/build.js
+627 silly gunzTarPerm modified mode [ 'build/build.js', 420, 438 ]
+628 silly gunzTarPerm extractEntry component.json
+629 silly gunzTarPerm modified mode [ 'component.json', 420, 438 ]
+630 silly gunzTarPerm extractEntry LICENSE
+631 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+632 silly gunzTarPerm extractEntry index.js
+633 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+634 silly gunzTarPerm extractEntry test.js
+635 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+636 silly gunzTarPerm extractEntry float.patch
+637 silly gunzTarPerm modified mode [ 'float.patch', 420, 438 ]
+638 silly gunzTarPerm extractEntry inherits.js
+639 silly gunzTarPerm modified mode [ 'inherits.js', 420, 438 ]
+640 silly gunzTarPerm extractEntry inherits_browser.js
+641 silly gunzTarPerm modified mode [ 'inherits_browser.js', 420, 438 ]
+642 silly gunzTarPerm extractEntry lib/util.js
+643 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 438 ]
+644 silly gunzTarPerm extractEntry test.js
+645 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+646 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\package.json
+647 info preinstall mongodb-core@2.0.4
+648 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\package.json
+649 silly prepareForInstallMany adding bson@~0.5.1 from mongodb-core dependencies
+650 silly prepareForInstallMany adding require_optional@~1.0.0 from mongodb-core dependencies
+651 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\package.json
+652 silly cache add args [ 'bson@~0.5.1', null ]
+653 verbose cache add spec bson@~0.5.1
+654 silly cache add parsed spec Result {
+654 silly cache add   raw: 'bson@~0.5.1',
+654 silly cache add   scope: null,
+654 silly cache add   name: 'bson',
+654 silly cache add   rawSpec: '~0.5.1',
+654 silly cache add   spec: '>=0.5.1 <0.6.0',
+654 silly cache add   type: 'range' }
+655 silly addNamed bson@>=0.5.1 <0.6.0
+656 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for bson
+657 silly addNameRange { name: 'bson', range: '>=0.5.1 <0.6.0', hasData: false }
+658 silly mapToRegistry name bson
+659 silly mapToRegistry using default registry
+660 silly mapToRegistry registry https://registry.npmjs.org/
+661 silly mapToRegistry data Result {
+661 silly mapToRegistry   raw: 'bson',
+661 silly mapToRegistry   scope: null,
+661 silly mapToRegistry   name: 'bson',
+661 silly mapToRegistry   rawSpec: '',
+661 silly mapToRegistry   spec: 'latest',
+661 silly mapToRegistry   type: 'tag' }
+662 silly mapToRegistry uri https://registry.npmjs.org/bson
+663 verbose addNameRange registry:https://registry.npmjs.org/bson not in flight; fetching
+664 silly cache add args [ 'require_optional@~1.0.0', null ]
+665 verbose cache add spec require_optional@~1.0.0
+666 silly cache add parsed spec Result {
+666 silly cache add   raw: 'require_optional@~1.0.0',
+666 silly cache add   scope: null,
+666 silly cache add   name: 'require_optional',
+666 silly cache add   rawSpec: '~1.0.0',
+666 silly cache add   spec: '>=1.0.0 <1.1.0',
+666 silly cache add   type: 'range' }
+667 silly addNamed require_optional@>=1.0.0 <1.1.0
+668 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for require_optional
+669 silly addNameRange { name: 'require_optional',
+669 silly addNameRange   range: '>=1.0.0 <1.1.0',
+669 silly addNameRange   hasData: false }
+670 silly mapToRegistry name require_optional
+671 silly mapToRegistry using default registry
+672 silly mapToRegistry registry https://registry.npmjs.org/
+673 silly mapToRegistry data Result {
+673 silly mapToRegistry   raw: 'require_optional',
+673 silly mapToRegistry   scope: null,
+673 silly mapToRegistry   name: 'require_optional',
+673 silly mapToRegistry   rawSpec: '',
+673 silly mapToRegistry   spec: 'latest',
+673 silly mapToRegistry   type: 'tag' }
+674 silly mapToRegistry uri https://registry.npmjs.org/require_optional
+675 verbose addNameRange registry:https://registry.npmjs.org/require_optional not in flight; fetching
+676 verbose request uri https://registry.npmjs.org/bson
+677 verbose request no auth needed
+678 info attempt registry request try #1 at 14:26:00
+679 verbose etag "8E0ORK6H343QO4NMX7X2RKTDL"
+680 http request GET https://registry.npmjs.org/bson
+681 verbose request uri https://registry.npmjs.org/require_optional
+682 verbose request no auth needed
+683 info attempt registry request try #1 at 14:26:00
+684 verbose etag "3CROVS301FTIAWGRNLHA420GU"
+685 http request GET https://registry.npmjs.org/require_optional
+686 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\package.json
+687 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\package.json
+688 info preinstall string_decoder@0.10.31
+689 info preinstall isarray@0.0.1
+690 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\package.json
+691 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\package.json
+692 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\package.json
+693 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\package.json
+694 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\package.json
+695 http 304 https://registry.npmjs.org/bson
+696 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+696 verbose headers   via: '1.1 varnish',
+696 verbose headers   'cache-control': 'max-age=300',
+696 verbose headers   etag: '"8E0ORK6H343QO4NMX7X2RKTDL"',
+696 verbose headers   age: '272',
+696 verbose headers   connection: 'keep-alive',
+696 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+696 verbose headers   'x-cache': 'HIT',
+696 verbose headers   'x-cache-hits': '3',
+696 verbose headers   'x-timer': 'S1468499162.343325,VS0,VE0',
+696 verbose headers   vary: 'Accept-Encoding' }
+697 silly get cb [ 304,
+697 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+697 silly get     via: '1.1 varnish',
+697 silly get     'cache-control': 'max-age=300',
+697 silly get     etag: '"8E0ORK6H343QO4NMX7X2RKTDL"',
+697 silly get     age: '272',
+697 silly get     connection: 'keep-alive',
+697 silly get     'x-served-by': 'cache-lcy1130-LCY',
+697 silly get     'x-cache': 'HIT',
+697 silly get     'x-cache-hits': '3',
+697 silly get     'x-timer': 'S1468499162.343325,VS0,VE0',
+697 silly get     vary: 'Accept-Encoding' } ]
+698 verbose etag https://registry.npmjs.org/bson from cache
+699 verbose get saving bson to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\bson\.cache.json
+700 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+701 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\package.json
+702 info preinstall inherits@2.0.1
+703 http 304 https://registry.npmjs.org/require_optional
+704 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+704 verbose headers   via: '1.1 varnish',
+704 verbose headers   'cache-control': 'max-age=300',
+704 verbose headers   etag: '"3CROVS301FTIAWGRNLHA420GU"',
+704 verbose headers   age: '39',
+704 verbose headers   connection: 'keep-alive',
+704 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+704 verbose headers   'x-cache': 'HIT',
+704 verbose headers   'x-cache-hits': '1',
+704 verbose headers   'x-timer': 'S1468499162.344880,VS0,VE1',
+704 verbose headers   vary: 'Accept-Encoding' }
+705 silly get cb [ 304,
+705 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+705 silly get     via: '1.1 varnish',
+705 silly get     'cache-control': 'max-age=300',
+705 silly get     etag: '"3CROVS301FTIAWGRNLHA420GU"',
+705 silly get     age: '39',
+705 silly get     connection: 'keep-alive',
+705 silly get     'x-served-by': 'cache-lcy1130-LCY',
+705 silly get     'x-cache': 'HIT',
+705 silly get     'x-cache-hits': '1',
+705 silly get     'x-timer': 'S1468499162.344880,VS0,VE1',
+705 silly get     vary: 'Accept-Encoding' } ]
+706 verbose etag https://registry.npmjs.org/require_optional from cache
+707 verbose get saving require_optional to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\require_optional\.cache.json
+708 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+709 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\package.json
+710 info preinstall core-util-is@1.0.2
+711 silly install resolved []
+712 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+713 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+714 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\package.json
+715 silly install resolved []
+716 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+717 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+718 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\package.json
+719 silly addNameRange number 2 { name: 'bson', range: '>=0.5.1 <0.6.0', hasData: true }
+720 silly addNameRange versions [ 'bson',
+720 silly addNameRange   [ '0.0.1',
+720 silly addNameRange     '0.0.2',
+720 silly addNameRange     '0.0.3',
+720 silly addNameRange     '0.0.4',
+720 silly addNameRange     '0.0.5',
+720 silly addNameRange     '0.0.6',
+720 silly addNameRange     '0.0.7',
+720 silly addNameRange     '0.0.8',
+720 silly addNameRange     '0.0.9',
+720 silly addNameRange     '0.1.0',
+720 silly addNameRange     '0.1.1',
+720 silly addNameRange     '0.1.3',
+720 silly addNameRange     '0.1.4',
+720 silly addNameRange     '0.1.5',
+720 silly addNameRange     '0.1.6',
+720 silly addNameRange     '0.1.7',
+720 silly addNameRange     '0.1.8',
+720 silly addNameRange     '0.1.9',
+720 silly addNameRange     '0.2.0',
+720 silly addNameRange     '0.2.1',
+720 silly addNameRange     '0.2.2',
+720 silly addNameRange     '0.2.3',
+720 silly addNameRange     '0.2.4',
+720 silly addNameRange     '0.2.5',
+720 silly addNameRange     '0.2.6',
+720 silly addNameRange     '0.2.7',
+720 silly addNameRange     '0.2.8',
+720 silly addNameRange     '0.2.9',
+720 silly addNameRange     '0.2.10',
+720 silly addNameRange     '0.2.11',
+720 silly addNameRange     '0.2.12',
+720 silly addNameRange     '0.2.13',
+720 silly addNameRange     '0.2.14',
+720 silly addNameRange     '0.2.15',
+720 silly addNameRange     '0.2.16',
+720 silly addNameRange     '0.2.17',
+720 silly addNameRange     '0.2.18',
+720 silly addNameRange     '0.2.19',
+720 silly addNameRange     '0.2.20',
+720 silly addNameRange     '0.2.21',
+720 silly addNameRange     '0.3.0',
+720 silly addNameRange     '0.3.1',
+720 silly addNameRange     '0.3.2',
+720 silly addNameRange     '0.4.0',
+720 silly addNameRange     '0.4.1',
+720 silly addNameRange     '0.4.2',
+720 silly addNameRange     '0.4.3',
+720 silly addNameRange     '0.4.4',
+720 silly addNameRange     '0.4.5',
+720 silly addNameRange     '0.4.6',
+720 silly addNameRange     '0.4.7',
+720 silly addNameRange     '0.4.8',
+720 silly addNameRange     '0.2.22',
+720 silly addNameRange     '0.4.10',
+720 silly addNameRange     '0.4.12',
+720 silly addNameRange     '0.4.13',
+720 silly addNameRange     '0.4.14',
+720 silly addNameRange     '0.4.15',
+720 silly addNameRange     '0.4.16',
+720 silly addNameRange     '0.4.17',
+720 silly addNameRange     '0.4.18',
+720 silly addNameRange     '0.4.19',
+720 silly addNameRange     '0.4.20',
+720 silly addNameRange     '0.4.21',
+720 silly addNameRange     '0.4.22',
+720 silly addNameRange     '0.4.23',
+720 silly addNameRange     '0.5.0',
+720 silly addNameRange     '0.5.1',
+720 silly addNameRange     '0.5.2' ] ]
+721 silly addNamed bson@0.5.2
+722 verbose addNamed "0.5.2" is a plain semver version for bson
+723 info linkStuff string_decoder@0.10.31
+724 silly linkStuff string_decoder@0.10.31 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules as its parent node_modules
+725 silly addNameRange number 2 { name: 'require_optional',
+725 silly addNameRange   range: '>=1.0.0 <1.1.0',
+725 silly addNameRange   hasData: true }
+726 silly addNameRange versions [ 'require_optional', [ '1.0.0' ] ]
+727 silly addNamed require_optional@1.0.0
+728 verbose addNamed "1.0.0" is a plain semver version for require_optional
+729 info linkStuff isarray@0.0.1
+730 silly linkStuff isarray@0.0.1 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules as its parent node_modules
+731 verbose linkBins string_decoder@0.10.31
+732 verbose linkMans string_decoder@0.10.31
+733 verbose rebuildBundles string_decoder@0.10.31
+734 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\package.json
+735 verbose linkBins isarray@0.0.1
+736 verbose linkMans isarray@0.0.1
+737 verbose rebuildBundles isarray@0.0.1
+738 info install string_decoder@0.10.31
+739 silly install resolved []
+740 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+741 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+742 info install isarray@0.0.1
+743 silly cache afterAdd bson@0.5.2
+744 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\bson\0.5.2\package\package.json not in flight; writing
+745 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+746 silly cache afterAdd require_optional@1.0.0
+747 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\require_optional\1.0.0\package\package.json not in flight; writing
+748 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+749 info postinstall string_decoder@0.10.31
+750 info postinstall isarray@0.0.1
+751 info linkStuff inherits@2.0.1
+752 silly linkStuff inherits@2.0.1 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules as its parent node_modules
+753 silly install resolved []
+754 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+755 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+756 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\string-decoder-73c567ef53a39aed.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder
+757 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\isarray-589c9c7e6fbb1ca2.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray
+758 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\bson\0.5.2\package\package.json written
+759 verbose linkBins inherits@2.0.1
+760 verbose linkMans inherits@2.0.1
+761 verbose rebuildBundles inherits@2.0.1
+762 info install inherits@2.0.1
+763 info linkStuff core-util-is@1.0.2
+764 silly linkStuff core-util-is@1.0.2 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules as its parent node_modules
+765 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\require_optional\1.0.0\package\package.json written
+766 silly install resolved [ { name: 'bson',
+766 silly install resolved     description: 'A bson parser for node.js and the browser',
+766 silly install resolved     keywords: [ 'mongodb', 'bson', 'parser' ],
+766 silly install resolved     files:
+766 silly install resolved      [ 'lib',
+766 silly install resolved        'browser_build',
+766 silly install resolved        'alternate_parsers',
+766 silly install resolved        'bower.json',
+766 silly install resolved        'tools',
+766 silly install resolved        'deserializer_bak.js' ],
+766 silly install resolved     version: '0.5.2',
+766 silly install resolved     author: { name: 'Christian Amor Kvalheim', email: 'christkv@gmail.com' },
+766 silly install resolved     contributors: [],
+766 silly install resolved     repository:
+766 silly install resolved      { type: 'git',
+766 silly install resolved        url: 'git+https://github.com/mongodb/js-bson.git' },
+766 silly install resolved     bugs: { url: 'https://github.com/mongodb/js-bson/issues' },
+766 silly install resolved     devDependencies:
+766 silly install resolved      { benchmark: '1.0.0',
+766 silly install resolved        colors: '1.1.0',
+766 silly install resolved        gleak: '0.2.3',
+766 silly install resolved        nodeunit: '0.9.0' },
+766 silly install resolved     config: { native: false },
+766 silly install resolved     main: './lib/bson/index',
+766 silly install resolved     directories: { lib: './lib/bson' },
+766 silly install resolved     engines: { node: '>=0.6.19' },
+766 silly install resolved     scripts: { test: 'nodeunit ./test/node' },
+766 silly install resolved     browser: 'lib/bson/bson.js',
+766 silly install resolved     license: 'Apache-2.0',
+766 silly install resolved     gitHead: 'afc468f7119c8dcea19e82984ace3eaa9214134f',
+766 silly install resolved     homepage: 'https://github.com/mongodb/js-bson',
+766 silly install resolved     _id: 'bson@0.5.2',
+766 silly install resolved     _shasum: 'ff0fbbf90a99eee06bf33c42edf73e51690fbebd',
+766 silly install resolved     _from: 'bson@>=0.5.1 <0.6.0',
+766 silly install resolved     _npmVersion: '2.15.1',
+766 silly install resolved     _nodeVersion: '4.4.4',
+766 silly install resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+766 silly install resolved     maintainers: [ [Object], [Object] ],
+766 silly install resolved     dist:
+766 silly install resolved      { shasum: 'ff0fbbf90a99eee06bf33c42edf73e51690fbebd',
+766 silly install resolved        tarball: 'https://registry.npmjs.org/bson/-/bson-0.5.2.tgz' },
+766 silly install resolved     _npmOperationalInternal:
+766 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+766 silly install resolved        tmp: 'tmp/bson-0.5.2.tgz_1468236520063_0.9097728193737566' },
+766 silly install resolved     _resolved: 'https://registry.npmjs.org/bson/-/bson-0.5.2.tgz',
+766 silly install resolved     readme: 'ERROR: No README data found!' },
+766 silly install resolved   { name: 'require_optional',
+766 silly install resolved     version: '1.0.0',
+766 silly install resolved     description: 'Allows you declare optionalPeerDependencies that can be satisfied by the top level module but ignored if they are not.',
+766 silly install resolved     main: 'index.js',
+766 silly install resolved     scripts: { test: 'mocha' },
+766 silly install resolved     repository:
+766 silly install resolved      { type: 'git',
+766 silly install resolved        url: 'git+https://github.com/christkv/require_optional.git' },
+766 silly install resolved     keywords: [ 'optional', 'require', 'optionalPeerDependencies' ],
+766 silly install resolved     author: { name: 'Christian Kvalheim Amor' },
+766 silly install resolved     license: 'Apache-2.0',
+766 silly install resolved     bugs: { url: 'https://github.com/christkv/require_optional/issues' },
+766 silly install resolved     homepage: 'https://github.com/christkv/require_optional',
+766 silly install resolved     dependencies: { semver: '^5.1.0', 'resolve-from': '^2.0.0' },
+766 silly install resolved     devDependencies:
+766 silly install resolved      { bson: '0.4.21',
+766 silly install resolved        co: '4.6.0',
+766 silly install resolved        'es6-promise': '^3.0.2',
+766 silly install resolved        mocha: '^2.4.5' },
+766 silly install resolved     peerOptionalDependencies:
+766 silly install resolved      { co: '>=5.6.0',
+766 silly install resolved        'es6-promise': '^3.0.2',
+766 silly install resolved        'es6-promise2': '^4.0.2',
+766 silly install resolved        bson: '0.4.21' },
+766 silly install resolved     gitHead: '8eac964c8e31166a8fb483d0d56025b185cee03f',
+766 silly install resolved     _id: 'require_optional@1.0.0',
+766 silly install resolved     _shasum: '52a86137a849728eb60a55533617f8f914f59abf',
+766 silly install resolved     _from: 'require_optional@>=1.0.0 <1.1.0',
+766 silly install resolved     _npmVersion: '2.14.12',
+766 silly install resolved     _nodeVersion: '4.2.4',
+766 silly install resolved     _npmUser: { name: 'christkv', email: 'christkv@gmail.com' },
+766 silly install resolved     maintainers: [ [Object] ],
+766 silly install resolved     dist:
+766 silly install resolved      { shasum: '52a86137a849728eb60a55533617f8f914f59abf',
+766 silly install resolved        tarball: 'https://registry.npmjs.org/require_optional/-/require_optional-1.0.0.tgz' },
+766 silly install resolved     _npmOperationalInternal:
+766 silly install resolved      { host: 'packages-5-east.internal.npmjs.com',
+766 silly install resolved        tmp: 'tmp/require_optional-1.0.0.tgz_1454503936164_0.7571216486394405' },
+766 silly install resolved     directories: {},
+766 silly install resolved     _resolved: 'https://registry.npmjs.org/require_optional/-/require_optional-1.0.0.tgz',
+766 silly install resolved     readme: 'ERROR: No README data found!' } ]
+767 info install bson@0.5.2 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+768 info install require_optional@1.0.0 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+769 info installOne bson@0.5.2
+770 verbose installOne of bson to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core not in flight; installing
+771 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+772 info installOne require_optional@1.0.0
+773 verbose installOne of require_optional to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core not in flight; installing
+774 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+775 info postinstall inherits@2.0.1
+776 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\bson-6ed32aede7c5fac1.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+777 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\require-optional-0875ded46843649a.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+778 silly install write writing bson 0.5.2 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+779 verbose linkBins core-util-is@1.0.2
+780 verbose linkMans core-util-is@1.0.2
+781 verbose rebuildBundles core-util-is@1.0.2
+782 silly install write writing require_optional 1.0.0 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+783 info install core-util-is@1.0.2
+784 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\inherits-3b34a871361abf81.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits
+785 info postinstall core-util-is@1.0.2
+786 verbose unbuild node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+787 verbose unbuild node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+788 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+789 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+790 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+791 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+792 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\core-util-is-d3bcedbb553585db.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is
+793 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+794 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+795 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\bson\0.5.2\package.tgz
+796 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+797 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson is being purged
+798 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+799 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\require_optional\1.0.0\package.tgz
+800 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+801 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional is being purged
+802 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+803 silly gunzTarPerm modes [ '777', '666' ]
+804 silly gunzTarPerm modes [ '777', '666' ]
+805 info linkStuff readable-stream@1.0.31
+806 silly linkStuff readable-stream@1.0.31 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules as its parent node_modules
+807 silly gunzTarPerm extractEntry package.json
+808 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+809 verbose linkBins readable-stream@1.0.31
+810 verbose linkMans readable-stream@1.0.31
+811 verbose rebuildBundles readable-stream@1.0.31
+812 verbose rebuildBundles [ 'core-util-is', 'inherits', 'isarray', 'string_decoder' ]
+813 info install readable-stream@1.0.31
+814 silly gunzTarPerm extractEntry package.json
+815 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+816 info postinstall readable-stream@1.0.31
+817 silly gunzTarPerm extractEntry README.md
+818 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+819 silly gunzTarPerm extractEntry deserializer_bak.js
+820 silly gunzTarPerm modified mode [ 'deserializer_bak.js', 420, 438 ]
+821 silly gunzTarPerm extractEntry .npmignore
+822 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+823 silly gunzTarPerm extractEntry README.md
+824 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+825 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\readable-stream-4ef98f142add6da1.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\readable-stream
+826 silly gunzTarPerm extractEntry LICENSE
+827 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+828 silly gunzTarPerm extractEntry index.js
+829 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+830 silly gunzTarPerm extractEntry .travis.yml
+831 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+832 silly gunzTarPerm extractEntry test/require_optional_tests.js
+833 silly gunzTarPerm modified mode [ 'test/require_optional_tests.js', 420, 438 ]
+834 silly gunzTarPerm extractEntry bower.json
+835 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+836 silly gunzTarPerm extractEntry LICENSE.md
+837 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+838 silly gunzTarPerm extractEntry alternate_parsers/bson.js
+839 silly gunzTarPerm modified mode [ 'alternate_parsers/bson.js', 420, 438 ]
+840 silly gunzTarPerm extractEntry alternate_parsers/faster_bson.js
+841 silly gunzTarPerm modified mode [ 'alternate_parsers/faster_bson.js', 420, 438 ]
+842 silly gunzTarPerm extractEntry browser_build/package.json
+843 silly gunzTarPerm modified mode [ 'browser_build/package.json', 420, 438 ]
+844 silly gunzTarPerm extractEntry browser_build/bson.js
+845 silly gunzTarPerm modified mode [ 'browser_build/bson.js', 420, 438 ]
+846 silly gunzTarPerm extractEntry lib/bson/binary.js
+847 silly gunzTarPerm modified mode [ 'lib/bson/binary.js', 420, 438 ]
+848 silly gunzTarPerm extractEntry lib/bson/decimal128.js
+849 silly gunzTarPerm modified mode [ 'lib/bson/decimal128.js', 420, 438 ]
+850 silly gunzTarPerm extractEntry lib/bson/double.js
+851 silly gunzTarPerm modified mode [ 'lib/bson/double.js', 420, 438 ]
+852 silly gunzTarPerm extractEntry lib/bson/float_parser.js
+853 silly gunzTarPerm modified mode [ 'lib/bson/float_parser.js', 420, 438 ]
+854 silly gunzTarPerm extractEntry lib/bson/index.js
+855 silly gunzTarPerm modified mode [ 'lib/bson/index.js', 420, 438 ]
+856 silly gunzTarPerm extractEntry lib/bson/db_ref.js
+857 silly gunzTarPerm modified mode [ 'lib/bson/db_ref.js', 420, 438 ]
+858 silly gunzTarPerm extractEntry lib/bson/map.js
+859 silly gunzTarPerm modified mode [ 'lib/bson/map.js', 420, 438 ]
+860 silly gunzTarPerm extractEntry lib/bson/max_key.js
+861 silly gunzTarPerm modified mode [ 'lib/bson/max_key.js', 420, 438 ]
+862 silly gunzTarPerm extractEntry lib/bson/min_key.js
+863 silly gunzTarPerm modified mode [ 'lib/bson/min_key.js', 420, 438 ]
+864 silly gunzTarPerm extractEntry lib/bson/objectid.js
+865 silly gunzTarPerm modified mode [ 'lib/bson/objectid.js', 420, 438 ]
+866 silly gunzTarPerm extractEntry lib/bson/symbol.js
+867 silly gunzTarPerm modified mode [ 'lib/bson/symbol.js', 420, 438 ]
+868 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\package.json
+869 silly gunzTarPerm extractEntry lib/bson/code.js
+870 silly gunzTarPerm modified mode [ 'lib/bson/code.js', 420, 438 ]
+871 silly gunzTarPerm extractEntry lib/bson/regexp.js
+872 silly gunzTarPerm modified mode [ 'lib/bson/regexp.js', 420, 438 ]
+873 info preinstall require_optional@1.0.0
+874 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\package.json
+875 silly prepareForInstallMany adding semver@^5.1.0 from require_optional dependencies
+876 silly prepareForInstallMany adding resolve-from@^2.0.0 from require_optional dependencies
+877 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\package.json
+878 silly gunzTarPerm extractEntry lib/bson/bson.js
+879 silly gunzTarPerm modified mode [ 'lib/bson/bson.js', 420, 438 ]
+880 silly gunzTarPerm extractEntry lib/bson/timestamp.js
+881 silly gunzTarPerm modified mode [ 'lib/bson/timestamp.js', 420, 438 ]
+882 silly gunzTarPerm extractEntry lib/bson/long.js
+883 silly gunzTarPerm modified mode [ 'lib/bson/long.js', 420, 438 ]
+884 silly gunzTarPerm extractEntry lib/bson/parser/calculate_size.js
+885 silly gunzTarPerm modified mode [ 'lib/bson/parser/calculate_size.js', 420, 438 ]
+886 silly gunzTarPerm extractEntry lib/bson/parser/deserializer.js
+887 silly gunzTarPerm modified mode [ 'lib/bson/parser/deserializer.js', 420, 438 ]
+888 silly gunzTarPerm extractEntry lib/bson/parser/serializer.js
+889 silly gunzTarPerm modified mode [ 'lib/bson/parser/serializer.js', 420, 438 ]
+890 silly cache add args [ 'semver@^5.1.0', null ]
+891 verbose cache add spec semver@^5.1.0
+892 silly cache add parsed spec Result {
+892 silly cache add   raw: 'semver@^5.1.0',
+892 silly cache add   scope: null,
+892 silly cache add   name: 'semver',
+892 silly cache add   rawSpec: '^5.1.0',
+892 silly cache add   spec: '>=5.1.0 <6.0.0',
+892 silly cache add   type: 'range' }
+893 silly addNamed semver@>=5.1.0 <6.0.0
+894 verbose addNamed ">=5.1.0 <6.0.0" is a valid semver range for semver
+895 silly addNameRange { name: 'semver', range: '>=5.1.0 <6.0.0', hasData: false }
+896 silly mapToRegistry name semver
+897 silly mapToRegistry using default registry
+898 silly mapToRegistry registry https://registry.npmjs.org/
+899 silly mapToRegistry data Result {
+899 silly mapToRegistry   raw: 'semver',
+899 silly mapToRegistry   scope: null,
+899 silly mapToRegistry   name: 'semver',
+899 silly mapToRegistry   rawSpec: '',
+899 silly mapToRegistry   spec: 'latest',
+899 silly mapToRegistry   type: 'tag' }
+900 silly mapToRegistry uri https://registry.npmjs.org/semver
+901 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+902 silly cache add args [ 'resolve-from@^2.0.0', null ]
+903 verbose cache add spec resolve-from@^2.0.0
+904 silly cache add parsed spec Result {
+904 silly cache add   raw: 'resolve-from@^2.0.0',
+904 silly cache add   scope: null,
+904 silly cache add   name: 'resolve-from',
+904 silly cache add   rawSpec: '^2.0.0',
+904 silly cache add   spec: '>=2.0.0 <3.0.0',
+904 silly cache add   type: 'range' }
+905 silly addNamed resolve-from@>=2.0.0 <3.0.0
+906 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for resolve-from
+907 silly addNameRange { name: 'resolve-from', range: '>=2.0.0 <3.0.0', hasData: false }
+908 silly mapToRegistry name resolve-from
+909 silly mapToRegistry using default registry
+910 silly mapToRegistry registry https://registry.npmjs.org/
+911 silly mapToRegistry data Result {
+911 silly mapToRegistry   raw: 'resolve-from',
+911 silly mapToRegistry   scope: null,
+911 silly mapToRegistry   name: 'resolve-from',
+911 silly mapToRegistry   rawSpec: '',
+911 silly mapToRegistry   spec: 'latest',
+911 silly mapToRegistry   type: 'tag' }
+912 silly mapToRegistry uri https://registry.npmjs.org/resolve-from
+913 verbose addNameRange registry:https://registry.npmjs.org/resolve-from not in flight; fetching
+914 silly gunzTarPerm extractEntry HISTORY.md
+915 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 438 ]
+916 verbose request uri https://registry.npmjs.org/resolve-from
+917 verbose request no auth needed
+918 info attempt registry request try #1 at 14:26:01
+919 verbose etag "8JH95FUR85OLJP2NDCGISPYEP"
+920 http request GET https://registry.npmjs.org/resolve-from
+921 verbose request uri https://registry.npmjs.org/semver
+922 verbose request no auth needed
+923 info attempt registry request try #1 at 14:26:01
+924 verbose etag "5CT97O522Q3TU1IN85AEW41D0"
+925 http request GET https://registry.npmjs.org/semver
+926 silly gunzTarPerm extractEntry tools/gleak.js
+927 silly gunzTarPerm modified mode [ 'tools/gleak.js', 420, 438 ]
+928 http 304 https://registry.npmjs.org/resolve-from
+929 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+929 verbose headers   via: '1.1 varnish',
+929 verbose headers   'cache-control': 'max-age=300',
+929 verbose headers   etag: '"8JH95FUR85OLJP2NDCGISPYEP"',
+929 verbose headers   age: '66',
+929 verbose headers   connection: 'keep-alive',
+929 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+929 verbose headers   'x-cache': 'HIT',
+929 verbose headers   'x-cache-hits': '3',
+929 verbose headers   'x-timer': 'S1468499162.582335,VS0,VE0',
+929 verbose headers   vary: 'Accept-Encoding' }
+930 silly get cb [ 304,
+930 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+930 silly get     via: '1.1 varnish',
+930 silly get     'cache-control': 'max-age=300',
+930 silly get     etag: '"8JH95FUR85OLJP2NDCGISPYEP"',
+930 silly get     age: '66',
+930 silly get     connection: 'keep-alive',
+930 silly get     'x-served-by': 'cache-lcy1130-LCY',
+930 silly get     'x-cache': 'HIT',
+930 silly get     'x-cache-hits': '3',
+930 silly get     'x-timer': 'S1468499162.582335,VS0,VE0',
+930 silly get     vary: 'Accept-Encoding' } ]
+931 verbose etag https://registry.npmjs.org/resolve-from from cache
+932 verbose get saving resolve-from to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\resolve-from\.cache.json
+933 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+934 http 304 https://registry.npmjs.org/semver
+935 verbose headers { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+935 verbose headers   via: '1.1 varnish',
+935 verbose headers   'cache-control': 'max-age=300',
+935 verbose headers   etag: '"5CT97O522Q3TU1IN85AEW41D0"',
+935 verbose headers   age: '42',
+935 verbose headers   connection: 'keep-alive',
+935 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+935 verbose headers   'x-cache': 'HIT',
+935 verbose headers   'x-cache-hits': '5',
+935 verbose headers   'x-timer': 'S1468499162.584909,VS0,VE0',
+935 verbose headers   vary: 'Accept-Encoding' }
+936 silly get cb [ 304,
+936 silly get   { date: 'Thu, 14 Jul 2016 12:26:02 GMT',
+936 silly get     via: '1.1 varnish',
+936 silly get     'cache-control': 'max-age=300',
+936 silly get     etag: '"5CT97O522Q3TU1IN85AEW41D0"',
+936 silly get     age: '42',
+936 silly get     connection: 'keep-alive',
+936 silly get     'x-served-by': 'cache-lcy1133-LCY',
+936 silly get     'x-cache': 'HIT',
+936 silly get     'x-cache-hits': '5',
+936 silly get     'x-timer': 'S1468499162.584909,VS0,VE0',
+936 silly get     vary: 'Accept-Encoding' } ]
+937 verbose etag https://registry.npmjs.org/semver from cache
+938 verbose get saving semver to C:\Users\Aliz\AppData\Roaming\npm-cache\registry.npmjs.org\semver\.cache.json
+939 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+940 silly addNameRange number 2 { name: 'resolve-from', range: '>=2.0.0 <3.0.0', hasData: true }
+941 silly addNameRange versions [ 'resolve-from', [ '1.0.0', '1.0.1', '2.0.0' ] ]
+942 silly addNamed resolve-from@2.0.0
+943 verbose addNamed "2.0.0" is a plain semver version for resolve-from
+944 silly addNameRange number 2 { name: 'semver', range: '>=5.1.0 <6.0.0', hasData: true }
+945 silly addNameRange versions [ 'semver',
+945 silly addNameRange   [ '1.0.0',
+945 silly addNameRange     '1.0.1',
+945 silly addNameRange     '1.0.2',
+945 silly addNameRange     '1.0.3',
+945 silly addNameRange     '1.0.4',
+945 silly addNameRange     '1.0.5',
+945 silly addNameRange     '1.0.6',
+945 silly addNameRange     '1.0.7',
+945 silly addNameRange     '1.0.8',
+945 silly addNameRange     '1.0.9',
+945 silly addNameRange     '1.0.10',
+945 silly addNameRange     '1.0.11',
+945 silly addNameRange     '1.0.12',
+945 silly addNameRange     '1.0.13',
+945 silly addNameRange     '1.0.14',
+945 silly addNameRange     '1.1.0',
+945 silly addNameRange     '1.1.1',
+945 silly addNameRange     '1.1.2',
+945 silly addNameRange     '1.1.3',
+945 silly addNameRange     '1.1.4',
+945 silly addNameRange     '2.0.0-alpha',
+945 silly addNameRange     '2.0.0-beta',
+945 silly addNameRange     '2.0.1',
+945 silly addNameRange     '2.0.2',
+945 silly addNameRange     '2.0.3',
+945 silly addNameRange     '2.0.4',
+945 silly addNameRange     '2.0.5',
+945 silly addNameRange     '2.0.6',
+945 silly addNameRange     '2.0.7',
+945 silly addNameRange     '2.0.8',
+945 silly addNameRange     '2.0.9',
+945 silly addNameRange     '2.0.10',
+945 silly addNameRange     '2.0.11',
+945 silly addNameRange     '2.1.0',
+945 silly addNameRange     '2.2.0',
+945 silly addNameRange     '2.2.1',
+945 silly addNameRange     '2.3.0',
+945 silly addNameRange     '2.3.1',
+945 silly addNameRange     '2.3.2',
+945 silly addNameRange     '3.0.0',
+945 silly addNameRange     '3.0.1',
+945 silly addNameRange     '4.0.0',
+945 silly addNameRange     '4.0.2',
+945 silly addNameRange     '4.0.3',
+945 silly addNameRange     '4.1.0',
+945 silly addNameRange     '4.1.1',
+945 silly addNameRange     '4.2.0',
+945 silly addNameRange     '4.2.1',
+945 silly addNameRange     '4.2.2',
+945 silly addNameRange     '4.3.0',
+945 silly addNameRange     '4.3.1',
+945 silly addNameRange     '4.3.2',
+945 silly addNameRange     '4.3.3',
+945 silly addNameRange     '4.3.4',
+945 silly addNameRange     '4.3.5',
+945 silly addNameRange     '4.3.6',
+945 silly addNameRange     '5.0.0',
+945 silly addNameRange     '5.0.1',
+945 silly addNameRange     '5.0.2',
+945 silly addNameRange     '5.0.3',
+945 silly addNameRange     '5.1.0',
+945 silly addNameRange     '5.1.1',
+945 silly addNameRange     '5.2.0' ] ]
+946 silly addNamed semver@5.2.0
+947 verbose addNamed "5.2.0" is a plain semver version for semver
+948 silly cache afterAdd resolve-from@2.0.0
+949 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\resolve-from\2.0.0\package\package.json not in flight; writing
+950 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+951 silly cache afterAdd semver@5.2.0
+952 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\semver\5.2.0\package\package.json not in flight; writing
+953 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+954 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\resolve-from\2.0.0\package\package.json written
+955 verbose afterAdd C:\Users\Aliz\AppData\Roaming\npm-cache\semver\5.2.0\package\package.json written
+956 silly install resolved [ { name: 'resolve-from',
+956 silly install resolved     version: '2.0.0',
+956 silly install resolved     description: 'Resolve the path of a module like require.resolve() but from a given path',
+956 silly install resolved     license: 'MIT',
+956 silly install resolved     repository:
+956 silly install resolved      { type: 'git',
+956 silly install resolved        url: 'git+https://github.com/sindresorhus/resolve-from.git' },
+956 silly install resolved     author:
+956 silly install resolved      { name: 'Sindre Sorhus',
+956 silly install resolved        email: 'sindresorhus@gmail.com',
+956 silly install resolved        url: 'sindresorhus.com' },
+956 silly install resolved     engines: { node: '>=0.10.0' },
+956 silly install resolved     scripts: { test: 'xo && ava' },
+956 silly install resolved     files: [ 'index.js' ],
+956 silly install resolved     keywords: [ 'require', 'resolve', 'path', 'module', 'from', 'like', 'path' ],
+956 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+956 silly install resolved     gitHead: '583e0f8df06e1bc4d1c96d8d4f2484c745f522c3',
+956 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/resolve-from/issues' },
+956 silly install resolved     homepage: 'https://github.com/sindresorhus/resolve-from',
+956 silly install resolved     _id: 'resolve-from@2.0.0',
+956 silly install resolved     _shasum: '9480ab20e94ffa1d9e80a804c7ea147611966b57',
+956 silly install resolved     _from: 'resolve-from@>=2.0.0 <3.0.0',
+956 silly install resolved     _npmVersion: '2.14.7',
+956 silly install resolved     _nodeVersion: '4.2.1',
+956 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+956 silly install resolved     dist:
+956 silly install resolved      { shasum: '9480ab20e94ffa1d9e80a804c7ea147611966b57',
+956 silly install resolved        tarball: 'https://registry.npmjs.org/resolve-from/-/resolve-from-2.0.0.tgz' },
+956 silly install resolved     maintainers: [ [Object] ],
+956 silly install resolved     directories: {},
+956 silly install resolved     _resolved: 'https://registry.npmjs.org/resolve-from/-/resolve-from-2.0.0.tgz',
+956 silly install resolved     readme: 'ERROR: No README data found!' },
+956 silly install resolved   { name: 'semver',
+956 silly install resolved     version: '5.2.0',
+956 silly install resolved     description: 'The semantic version parser used by npm.',
+956 silly install resolved     main: 'semver.js',
+956 silly install resolved     scripts: { test: 'tap test/*.js' },
+956 silly install resolved     devDependencies: { tap: '^2.0.0' },
+956 silly install resolved     license: 'ISC',
+956 silly install resolved     repository:
+956 silly install resolved      { type: 'git',
+956 silly install resolved        url: 'git+https://github.com/npm/node-semver.git' },
+956 silly install resolved     bin: { semver: './bin/semver' },
+956 silly install resolved     files: [ 'bin', 'range.bnf', 'semver.js' ],
+956 silly install resolved     gitHead: 'f7fef36765c53ebe237bf415c3ea002f24aa5621',
+956 silly install resolved     bugs: { url: 'https://github.com/npm/node-semver/issues' },
+956 silly install resolved     homepage: 'https://github.com/npm/node-semver#readme',
+956 silly install resolved     _id: 'semver@5.2.0',
+956 silly install resolved     _shasum: '281995b80c1448209415ddbc4cf50c269cef55c5',
+956 silly install resolved     _from: 'semver@>=5.1.0 <6.0.0',
+956 silly install resolved     _npmVersion: '3.10.2',
+956 silly install resolved     _nodeVersion: '4.4.4',
+956 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+956 silly install resolved     dist:
+956 silly install resolved      { shasum: '281995b80c1448209415ddbc4cf50c269cef55c5',
+956 silly install resolved        tarball: 'https://registry.npmjs.org/semver/-/semver-5.2.0.tgz' },
+956 silly install resolved     maintainers: [ [Object], [Object] ],
+956 silly install resolved     _npmOperationalInternal:
+956 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+956 silly install resolved        tmp: 'tmp/semver-5.2.0.tgz_1467136841238_0.2250258030835539' },
+956 silly install resolved     directories: {},
+956 silly install resolved     _resolved: 'https://registry.npmjs.org/semver/-/semver-5.2.0.tgz',
+956 silly install resolved     readme: 'ERROR: No README data found!' } ]
+957 info install resolve-from@2.0.0 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+958 info install semver@5.2.0 into C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+959 info installOne resolve-from@2.0.0
+960 verbose installOne of resolve-from to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional not in flight; installing
+961 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+962 info installOne semver@5.2.0
+963 verbose installOne of semver to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional not in flight; installing
+964 verbose correctMkdir C:\Users\Aliz\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+965 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\resolve-from-f70259d7e45b065f.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+966 verbose lock using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\semver-e26ee5bef1086200.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+967 silly install write writing resolve-from 2.0.0 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+968 silly install write writing semver 5.2.0 to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+969 verbose unbuild node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+970 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+971 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+972 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\resolve-from\2.0.0\package.tgz
+973 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+974 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from is being purged
+975 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+976 silly gunzTarPerm modes [ '777', '666' ]
+977 verbose unbuild node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+978 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver is being purged from base C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+979 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+980 verbose tar unpack C:\Users\Aliz\AppData\Roaming\npm-cache\semver\5.2.0\package.tgz
+981 verbose tar unpacking to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+982 silly gentlyRm C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver is being purged
+983 verbose gentlyRm don't care about contents; nuking C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+984 silly gunzTarPerm extractEntry package.json
+985 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+986 silly gunzTarPerm modes [ '777', '666' ]
+987 silly gunzTarPerm extractEntry index.js
+988 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+989 silly gunzTarPerm extractEntry license
+990 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+991 silly gunzTarPerm extractEntry package.json
+992 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+993 silly gunzTarPerm extractEntry README.md
+994 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+995 silly gunzTarPerm extractEntry LICENSE
+996 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+997 silly gunzTarPerm extractEntry readme.md
+998 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+999 silly gunzTarPerm extractEntry semver.js
+1000 silly gunzTarPerm modified mode [ 'semver.js', 420, 438 ]
+1001 silly gunzTarPerm extractEntry bin/semver
+1002 silly gunzTarPerm modified mode [ 'bin/semver', 493, 511 ]
+1003 silly gunzTarPerm extractEntry range.bnf
+1004 silly gunzTarPerm modified mode [ 'range.bnf', 420, 438 ]
+1005 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson\package.json
+1006 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from\package.json
+1007 info preinstall bson@0.5.2
+1008 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson\package.json
+1009 info preinstall resolve-from@2.0.0
+1010 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from\package.json
+1011 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson\package.json
+1012 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from\package.json
+1013 silly install resolved []
+1014 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+1015 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+1016 silly install resolved []
+1017 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+1018 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+1019 info linkStuff bson@0.5.2
+1020 silly linkStuff bson@0.5.2 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules as its parent node_modules
+1021 info linkStuff resolve-from@2.0.0
+1022 silly linkStuff resolve-from@2.0.0 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules as its parent node_modules
+1023 verbose linkBins bson@0.5.2
+1024 verbose linkMans bson@0.5.2
+1025 verbose rebuildBundles bson@0.5.2
+1026 info install bson@0.5.2
+1027 verbose linkBins resolve-from@2.0.0
+1028 verbose linkMans resolve-from@2.0.0
+1029 verbose rebuildBundles resolve-from@2.0.0
+1030 info postinstall bson@0.5.2
+1031 info install resolve-from@2.0.0
+1032 verbose write writing to C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver\package.json
+1033 info postinstall resolve-from@2.0.0
+1034 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\bson-6ed32aede7c5fac1.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\bson
+1035 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\resolve-from-f70259d7e45b065f.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\resolve-from
+1036 info preinstall semver@5.2.0
+1037 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver\package.json
+1038 verbose readDependencies loading dependencies from C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver\package.json
+1039 silly install resolved []
+1040 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+1041 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+1042 info linkStuff semver@5.2.0
+1043 silly linkStuff semver@5.2.0 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules as its parent node_modules
+1044 verbose linkBins semver@5.2.0
+1045 verbose link bins [ { semver: './bin/semver' },
+1045 verbose link bins   'C:\\Users\\Aliz\\Documents\\_CODING\\Greenfox\\bizkanta\\week-09\\day-04\\node_modules\\mongodb\\node_modules\\mongodb-core\\node_modules\\require_optional\\node_modules\\.bin',
+1045 verbose link bins   false ]
+1046 verbose linkMans semver@5.2.0
+1047 verbose rebuildBundles semver@5.2.0
+1048 info install semver@5.2.0
+1049 info postinstall semver@5.2.0
+1050 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\semver-e26ee5bef1086200.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional\node_modules\semver
+1051 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+1052 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+1053 info linkStuff require_optional@1.0.0
+1054 silly linkStuff require_optional@1.0.0 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules as its parent node_modules
+1055 verbose linkBins require_optional@1.0.0
+1056 verbose linkMans require_optional@1.0.0
+1057 verbose rebuildBundles require_optional@1.0.0
+1058 verbose rebuildBundles [ '.bin', 'resolve-from', 'semver' ]
+1059 info install require_optional@1.0.0
+1060 info postinstall require_optional@1.0.0
+1061 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\require-optional-0875ded46843649a.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core\node_modules\require_optional
+1062 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+1063 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+1064 info linkStuff mongodb-core@2.0.4
+1065 silly linkStuff mongodb-core@2.0.4 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules as its parent node_modules
+1066 verbose linkBins mongodb-core@2.0.4
+1067 verbose linkMans mongodb-core@2.0.4
+1068 verbose rebuildBundles mongodb-core@2.0.4
+1069 verbose rebuildBundles [ 'bson', 'require_optional' ]
+1070 info install mongodb-core@2.0.4
+1071 info postinstall mongodb-core@2.0.4
+1072 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\mongodb-core-60103fe3c9a0c155.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb\node_modules\mongodb-core
+1073 verbose about to build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+1074 info build C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+1075 info linkStuff mongodb@2.2.1
+1076 silly linkStuff mongodb@2.2.1 has C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules as its parent node_modules
+1077 verbose linkBins mongodb@2.2.1
+1078 verbose linkMans mongodb@2.2.1
+1079 verbose rebuildBundles mongodb@2.2.1
+1080 verbose rebuildBundles [ 'es6-promise', 'mongodb-core', 'readable-stream' ]
+1081 info install mongodb@2.2.1
+1082 info postinstall mongodb@2.2.1
+1083 verbose unlock done using C:\Users\Aliz\AppData\Roaming\npm-cache\_locks\mongodb-8e7569b67f0cb190.lock for C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\node_modules\mongodb
+1084 verbose validateInstall loading C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04\package.json for validation
+1085 verbose stack Error: The package eslint@3.0.1 does not satisfy its siblings' peerDependencies requirements!
+1085 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+1085 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
+1085 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+1085 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+1085 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+1085 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+1085 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+1085 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+1085 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+1085 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+1086 verbose cwd C:\Users\Aliz\Documents\_CODING\Greenfox\bizkanta\week-09\day-04
+1087 error Windows_NT 10.0.10586
+1088 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "mongodb"
+1089 error node v4.4.6
+1090 error npm  v2.15.5
+1091 error code EPEERINVALID
+1092 error peerinvalid The package eslint@3.0.1 does not satisfy its siblings' peerDependencies requirements!
+1092 error peerinvalid Peer eslint-config-airbnb@9.0.1 wants eslint@^2.9.0
+1092 error peerinvalid Peer eslint-plugin-import@1.7.0 wants eslint@2.x
+1093 verbose exit [ 1, true ]
