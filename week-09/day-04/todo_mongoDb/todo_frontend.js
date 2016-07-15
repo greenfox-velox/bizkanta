@@ -5,7 +5,7 @@ var addButton = document.querySelector('.add_button');
 var todoList = document.querySelector('ul');
 addButton.addEventListener('click', newTodoItem);
 
-var url = 'http://localhost:3000/todos/';
+var url = 'http://127.0.0.1:3000/todos/';
 
 getTodosFromServer(insertItemsToDOM);
 
