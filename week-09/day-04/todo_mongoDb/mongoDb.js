@@ -17,16 +17,14 @@ function ConnectToDb(){
 }
 
 ConnectToDb.prototype.getAllTodos = function (callback){
-  // var collection = connectToDb();
   this.collection.find({}, { 'id': 1, 'text': 1, _id : 0 }).toArray(function (err, todos) {
     if (err) {
       console.log(err);
     }
-    // res.send(result);
     callback(todos);
   });
 }
 
 module.exports = {
-  ConnectToDb: ConnectToDb,
+  ConnectToDb: ConnectToDb
 }
