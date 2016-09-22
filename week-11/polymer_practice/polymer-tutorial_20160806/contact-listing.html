@@ -1,0 +1,42 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="stylesheet" href="bower_components/paper-input/paper-input.html">
+
+<dom-module id="contact-listing">
+  <template>
+    <style>
+    .listing-wrapper {
+      display: flex;
+      padding: 20px;
+    }
+    .listing-wrapper img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    h3 {
+      margin: 0 40px 0 0;
+      line-height: 80px;
+    }
+    .listing-wrapper span {
+      line-height: 80px;
+    }
+    </style>
+    <div class="listing-wrapper">
+      <h3>{{name}}</h3>
+      <img src="{{img}}" alt="">
+      <span>{{email}}</span>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: "contact-listing",
+      // theese are not really nececcary, the program is working without them:
+      properties: {
+        name: String,
+        email: String,
+        img: String
+      }
+
+    })
+  </script>
+</dom-module>

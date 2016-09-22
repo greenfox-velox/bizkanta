@@ -1,0 +1,71 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="stylesheet" href="bower_components/paper-input/paper-input.html">
+<link rel="import" href="contact-listing.html">
+
+<dom-module id="contact-list">
+  <template>
+    <style>
+      ul {
+        list-style: none;
+      }
+      li + li {
+        border-top: 1px solid black;
+      }
+    </style>
+    <!-- <paper-input label="whatever" value="{{inputValue}}"></paper-input>
+    <h1>{{fullName}}</h1>
+    <h2>{{inputValue}}</h2> -->
+    <ul>
+      <template is="dom-repeat" items="{{contacts}}">
+          <li>
+            <contact-listing name={{item.name}}
+            email={{item.email}}
+            img={{item.img}}
+            ></contact-listing>
+          </li>
+      </template>
+    </ul>
+
+  </template>
+  <script>
+    Polymer({
+      is: "contact-list",
+      ready: function() {
+        this.contacts = [
+          {
+            name: 'Lisa',
+            email: 'lisa@gmail.com',
+            img: 'https://randomuser.me/api/portraits/thumb/women/2.jpg'
+          },
+          {
+            name: 'Sam',
+            email: 'sam@gmail.com',
+            img: 'https://randomuser.me/api/portraits/thumb/women/4.jpg'
+          },
+          {
+            name: 'Jo',
+            email: 'jo@gmail.com',
+            img: 'https://randomuser.me/api/portraits/thumb/women/7.jpg'
+          }
+        ]
+      },
+
+      // properties: {
+      //   firstName: String,
+      //   lastName: {
+      //     type: String,
+      //     value: "t"
+      //   },
+      //   fullName: {
+      //     type: String,
+      //     computed: 'computeFullName(firstName, lastName)'
+      //   },
+      //   inputValue: String
+      // },
+      //
+      // computeFullName: function(firstName, lastName) {
+      //   return firstName + ' ' + lastName;
+      // }
+    })
+  </script>
+</dom-module>
