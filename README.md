@@ -1,16 +1,7 @@
-Take a look at [my Github profile](https://github.com/bizkanta)!
+# Hello Visitor! Welcome to my Repo! :rose:
 
+### Look at my client side projects [at my github.io](https://github.com/bizkanta/bizkanta.github.io), and try them out by clicking on them in the Readme.
 
-Green Fox Academy
+### You can also find my CV there, or just click [here](https://bizkanta.github.io/myCV/)!
 
-First weeks projects:
-
-build [Anakin Skywalker CV](https://bizkanta.github.io/week-01/anakin_CV/anakin.html)
-
-build [my own CV](https://bizkanta.github.io/week-01/myCV/)
-
-Second weeks projects:
-
-make a [form](https://bizkanta.github.io/week-02/form/form.html)
-
-build [Margaret Hamilton Wikipedia page](http://bizkanta.github.io/week-02/wikipedia/margaret.html)
+### Feel free to leave a comment anywhere in the repo. If you have any questions or suggestions, do not hesitate to contact me!
